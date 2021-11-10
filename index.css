@@ -12,11 +12,11 @@
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 25px;
   color: black;
   text-align: center;
   padding: 14px 16px;
-  margin-left: 100px;
+  margin-left: 20px;
   text-decoration: none;
 }
 
@@ -26,14 +26,14 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 15px;
+  font-size: 25px;
   border: none;
   outline: none;
   color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin-left: 55px;
+  margin-left: 265px;
 }
 
 .dropdown:hover .dropbtn {
@@ -47,7 +47,7 @@
   min-width: 100px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 .dropdown-content a {
@@ -60,6 +60,10 @@
   margin-left: 5px;
 }
 
+.icons a:hover {
+  color: rgb(135, 138, 146);
+}
+
 .dropdown-content a:hover {
   background-color: #ddd;
 }
@@ -69,10 +73,10 @@
 }
 
 .main {
-  width: 430px;
+  width: 450px;
   display: flex;
   margin-right: 10px;
-  margin-left: 40px;
+  margin-left: 0;
 }
 
 .background {
@@ -84,7 +88,7 @@
 
 .header {
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
 }
 
 img {
@@ -97,49 +101,50 @@ img {
 
 h1 {
   text-align: center;
-  color: rgb(137, 241, 184);
-  font-size: 40px;
+  color: rgb(12, 5, 43);
+  font-size: 52px;
   margin: 0;
-  padding-top: 40px;
-  padding-right: 55px;
+  padding-top: 75px;
+  padding-right: 3px;
 }
 
 h2 {
+  color: rgb(137, 241, 184);
   text-align: center;
-  color: rgb(4, 3, 48);
-  font-size: 35px;
+  font-size: 50px;
   margin: 0;
-  padding-top: 30px;
-  padding-right: 55px;
+  padding-top: 20px;
+  padding-right: 3px;
 }
 
 p {
+  color: black;
   text-align: center;
-  color: rgb(12, 5, 43);
-  font-size: 21px;
-  margin-right: 30px;
-  padding-top: 40px;
-  padding-right: 55px;
-  padding-left: 40px;
+  font-size: 24px;
+  padding-top: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 35px;
 }
 
 .icons {
   text-align: center;
-  color: rgb(12, 5, 43);
-  font-size: 20px;
-  margin: 10px;
-  padding-top: 10px;
-  padding-right: 55px;
+  line-height: 20px;
+  font-size: 30px;
+  padding-top: 80px;
+  word-spacing: 15px;
+  text-decoration: none;
+  color: rgb(57, 57, 58);
 }
 
-/* Extra small devices (phones, 600px and down)
- *
- @media screen and (min-width: 60px){}
+.icons a:visited {
+  color: rgb(55, 53, 59);
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200px) {
   .main {
-    width: 430px;
+    width: 450px;
     display: flex;
     margin-left: 450px;
     position: sticky;
@@ -147,23 +152,23 @@ p {
 
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 25px;
     color: black;
     text-align: center;
     padding: 14px 16px;
-    margin-left: 500px;
+    margin-left: 450px;
     text-decoration: none;
   }
 
   .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 25px;
     border: none;
     outline: none;
     color: black;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    margin-left: 55px;
+    margin-left: 255px;
   }
 
   .dropdown:hover .dropbtn {
@@ -177,7 +182,7 @@ p {
     min-width: 100px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-left: 100px;
+    margin-left: 200px;
   }
 
   .dropdown-content a {
@@ -190,7 +195,7 @@ p {
     margin-left: 5px;
   }
 
-  .dropdown-content a:hover {
+  .icons.dropdown-content a:hover {
     background-color: #ddd;
   }
 
@@ -215,38 +220,38 @@ p {
 
   h1 {
     text-align: center;
-    color: rgb(137, 241, 184);
-    font-size: 40px;
+    color: rgb(12, 5, 43);
+    font-size: 52px;
     margin: 0;
-    padding-top: 40px;
-    padding-left: -5px;
+    padding-top: 75px;
+    padding-right: 3px;
   }
 
   h2 {
+    color: rgb(137, 241, 184);
     text-align: center;
-    color: rgb(4, 3, 48);
-    font-size: 35px;
+    font-size: 50px;
     margin: 0;
-    padding-top: 30px;
-    padding-right: 55px;
+    padding-top: 20px;
+    padding-right: 3px;
   }
 
   p {
+    color: rgb(4, 3, 48);
     text-align: center;
-    color: rgb(12, 5, 43);
-    font-size: 21px;
-    margin-right: 55px;
+    font-size: 24px;
     padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 45px;
+    margin-right: 40px;
+    margin-left: 40px;
+    line-height: 35px;
   }
 
   .icons {
     text-align: center;
-    color: rgb(12, 5, 43);
-    font-size: 20px;
-    margin: 10px;
-    padding-top: 10px;
-    padding-right: 55px;
+    line-height: 20px;
+    color: rgb(140, 140, 141);
+    font-size: 30px;
+    padding-top: 50px;
+    word-spacing: 15px;
   }
 }
