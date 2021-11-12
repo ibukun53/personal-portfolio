@@ -62,4 +62,4 @@ jobs:
           npm install
       - name: Run Prettier
         run: |
-          npm run format:check 
+          npm run format:check
