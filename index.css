@@ -5,27 +5,26 @@
 }
 
 .navbar {
-  overflow: hidden;
+  display: flex;
   background-color: white;
   position: static;
+  
 }
-
-.navbar a {
-  float: left;
-  font-size: 25px;
+ .navbar-links {
+  font-size: 20px;
   color: black;
-  text-align: center;
-  padding: 14px 16px;
-  margin-left: 20px;
-  text-decoration: none;
-}
+  margin-left: 30px;
+  display: flex;
+  }
 
 .dropdown {
   float: left;
   overflow: hidden;
+  margin-left: auto;
+ 
 }
 
-.dropdown .dropbtn {
+ .dropbtn {
   font-size: 25px;
   border: none;
   outline: none;
@@ -33,11 +32,7 @@
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin-left: 265px;
-}
 
-.dropdown:hover .dropbtn {
-  background-color: #333;
 }
 
 .dropdown-content {
@@ -47,10 +42,10 @@
   min-width: 100px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-left: 200px;
+  margin-left: -55px;
 }
 
-.dropdown-content a {
+a {
   float: none;
   color: black;
   padding: 14px 16px;
@@ -58,6 +53,7 @@
   display: block;
   text-align: center;
   margin-left: 5px;
+  
 }
 
 .icons a:hover {
@@ -89,6 +85,7 @@
 .header {
   width: 100%;
   max-width: 500px;
+  
 }
 
 img {
@@ -127,131 +124,68 @@ p {
   line-height: 35px;
 }
 
-.icons {
-  text-align: center;
-  line-height: 20px;
-  font-size: 30px;
-  padding-top: 80px;
-  word-spacing: 15px;
+.icons{
+  margin: 0;
+  padding: 0;
+  overflow:auto;
+}
+ .icons ol{
+  float : left;
+  font-size: 25px;
+  margin-left: 25px;
+}
+.icons a{
+  display:block;
+  color:rgb(57, 57, 58);
+  text-align:center;
+  padding-top:30px;
   text-decoration: none;
-  color: rgb(57, 57, 58);
+  
 }
-
+.icons a:hover{
+  color: rgb(137, 241, 184);
+}
 .icons a:visited {
-  color: rgb(55, 53, 59);
+  color: rgb(44, 42, 48);
 }
+ 
+//*@media only screen and (min-width: 1200px) {
+   .navbar-links {
+  font-size: 20px;
+  color: black;
+  margin-left: 30px;
+  display: flex;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1200px) {
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-left: auto;
+ 
+}
   .main {
     width: 450px;
     display: flex;
-    margin-left: 450px;
-    position: sticky;
-  }
-
-  .navbar a {
-    float: left;
-    font-size: 25px;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    margin-left: 450px;
-    text-decoration: none;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 25px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin-left: 255px;
-  }
-
-  .dropdown:hover .dropbtn {
-    background-color: #333;
-  }
-
-  .dropdown-content {
-    display: none;
+    margin-right: 10px;
+    margin-left: 500px;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin-left: 200px;
   }
-
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    margin-left: 5px;
-  }
-
-  .icons.dropdown-content a:hover {
-    background-color: #ddd;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
   .background {
-    position: absolute;
+    position:;
     text-align: center;
     height: 20px;
     padding: 5px;
   }
-
-  img {
+  .header {
+    width: 100%;
+    max-width: 500px;
+    
+    }
+ img {
     background-color: white;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     z-index: -1;
-  }
-
-  h1 {
-    text-align: center;
-    color: rgb(12, 5, 43);
-    font-size: 52px;
-    margin: 0;
-    padding-top: 75px;
-    padding-right: 3px;
-  }
-
-  h2 {
-    color: rgb(137, 241, 184);
-    text-align: center;
-    font-size: 50px;
-    margin: 0;
-    padding-top: 20px;
-    padding-right: 3px;
-  }
-
-  p {
-    color: rgb(4, 3, 48);
-    text-align: center;
-    font-size: 24px;
-    padding-top: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
-    line-height: 35px;
-  }
-
-  .icons {
-    text-align: center;
-    line-height: 20px;
-    color: rgb(140, 140, 141);
-    font-size: 30px;
-    padding-top: 50px;
-    word-spacing: 15px;
   }
 }
