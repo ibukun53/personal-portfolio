@@ -3,7 +3,6 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .navbar {
   display: flex;
   background-color: white;
@@ -16,12 +15,10 @@
   margin-left: 30px;
   display: flex;
   }
-
 .dropdown {
   float: left;
   overflow: hidden;
   margin-left: auto;
- 
 }
 
  .dropbtn {
@@ -61,7 +58,7 @@ a {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(143, 134, 134);
 }
 
 .dropdown:hover .dropdown-content {
@@ -70,7 +67,6 @@ a {
 
 .main {
   width: 450px;
-  display: flex;
   margin-right: 10px;
   margin-left: 0;
 }
@@ -80,6 +76,7 @@ a {
   text-align: center;
   height: 20px;
   padding: 5px;
+
 }
 
 .header {
@@ -94,6 +91,9 @@ img {
   left: 0;
   top: 0;
   z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 h1 {
@@ -136,51 +136,10 @@ p {
   font-size: 25px;
   text-decoration: none;
   }
-.icons a:hover{
+
+ .icons a:hover {
   color: rgb(137, 241, 184);
 }
 .icons a:visited {
   color: rgb(44, 42, 48);
 }
-
- /*@media only screen and (min-width: 1200px) {
-   .navbar-links {
-  font-size: 20px;
-  color: black;
-  margin-left: 30px;
-  display: flex;
-  }/
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  margin-left: auto;
- 
-}
-  .main {
-    width: 450px;
-    display: flex;
-    margin-right: 10px;
-    margin-left: 500px;
-    position: absolute;
-  }
-  .background {
-    position:;
-    text-align: center;
-    height: 20px;
-    padding: 5px;
-  }
-  .header {
-    width: 100%;
-    max-width: 500px;
-    
-    }
- img {
-    background-color: white;
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: -1;
-  }
-}
-//*
