@@ -1,13 +1,13 @@
 {
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "description": "https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
     "format": "npx prettier  --write **/*.{html,js,json,md,json,yaml,yml,jsx}",
     "format:check": "npx prettier  --check **/*.{html,js,json,md,json,yaml,yml}",
     "lint": "npx stylelint \"**/*.css\" --fix",
-    "lint:check": "npx stylelint \"**/*.css\""
+    "lint:check": "npx stylelint \"**/*.css\"",
   },
   "repository": {
     "type": "git",
