@@ -1,146 +1,134 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ubuntu, sans-serif;
 }
+
 .navbar {
   display: flex;
-  background-color: white;
-  position: static;
-  
-}
- .navbar-links {
-  font-size: 20px;
-  color: black;
-  margin-left: 30px;
-  display: flex;
-  }
-.dropdown {
-  float: left;
-  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-right: auto;
   margin-left: auto;
+  margin-top: 3%;
 }
 
- .dropbtn {
-  font-size: 25px;
-  border: none;
-  outline: none;
+.link {
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 4px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+}
+
+main {
+  text-align: center;
+  background: url("./image/header.png");
+  background-position: center top;
+  background-size: cover;
+  padding-top: 10%;
+}
+
+.welcome {
+  font-weight: bold;
   color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin-left: -55px;
-  list-style-type: none;
-}
-
-a {
-  float: none;
-  color: black;
-  padding: 14px 16px;
   text-decoration: none;
-  display: block;
-  text-align: center;
-  margin-left: 5px;
-  
-}
-
-.icons a:hover {
-  color: rgb(135, 138, 146);
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(143, 134, 134);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.main {
-  width: 450px;
-  margin-right: 10px;
-  margin-left: 0;
-}
-
-.background {
-  position: absolute;
-  text-align: center;
-  height: 20px;
-  padding: 5px;
-
-}
-
-.header {
-  width: 100%;
-  max-width: 500px;
-  
-}
-
-img {
-  background-color: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  display: flex;
-  flex-wrap: wrap;
-  
 }
 
 h1 {
-  text-align: center;
-  color: rgb(12, 5, 43);
-  font-size: 52px;
-  margin: 0;
-  padding-top: 75px;
-  padding-right: 3px;
+  color: rgb(23, 43, 77);
+  font-size: 2.5em;
+  margin-top: 8%;
 }
 
 h2 {
-  color: rgb(137, 241, 184);
-  text-align: center;
-  font-size: 50px;
-  margin: 0;
-  padding-top: 20px;
-  padding-right: 3px;
+  color: rgb(63, 176, 107);
+  font-size: 2.5em;
+  margin-top: 4%;
 }
 
 p {
-  color: black;
-  text-align: center;
-  font-size: 24px;
-  padding-top: 70px;
-  margin-left: 40px;
-  margin-right: 40px;
-  line-height: 35px;
+  line-height: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 90%;
 }
-.icons{
-  margin: 0;
+
+footer {
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+  height: 100%;
+  margin-bottom: 10%;
+}
+
+.icons {
+  width: 20px;
   padding: 0;
-  overflow:visible;
+  margin: 0;
+  color: #505f79;
+  transition: all 500ms ease-in-out;
 }
 
-.icons-link{
-  display:inline-flex;
-  color:rgb(57, 57, 58);
-  padding-top: 50px;
-  font-size: 25px;
-  text-decoration: none;
-  }
-
- .icons a:hover {
-  color: rgb(137, 241, 184);
+.icons:hover {
+  transform: translate(0, 5px);
+  transition: all 500ms ease-in-out;
 }
-.icons a:visited {
-  color: rgb(44, 42, 48);
+
+.git:hover {
+  background-color: purple;
+  fill: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.linked:hover {
+  background-color: #0077b5;
+  fill: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+  fill: white;
+  padding: 5px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.angellist:hover {
+  background-color: rgb(45, 42, 42);
+  fill: rgb(205, 232, 213);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.medium:hover {
+  fill: rgb(210, 208, 208);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(35, 33, 33);
 }
