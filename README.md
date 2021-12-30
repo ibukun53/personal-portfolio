@@ -1,63 +1,84 @@
-# personal Portfolio
+# Portfolio Website
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
+> A portfolio website is an online representation of work you have created, as well as your skills and experiences.
 
-# Project Name
+![screenshot](./image_screenshot.png)
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+A portfolio website is certain to make you available and searchable for new clients. It lets your potential employers find you the moment.It presents evidence of your relevant skills and abilities.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages,
+- frameworks,
+- technologies used
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://app.netlify.com/teams/ibukun53/overview)
 
-## Getting Started
+### Development (Running locally)
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Clone the project
 
-To get a local copy up and running follow these simple example steps.
+```bash
+git clone https://github.com/user/html-css-template.git
 
-### Prerequisites
+```
 
-### Setup
+- Install Dependencies
 
-### Install
+```bash
+npm install
+```
 
-### Usage
+To run StyleLint by itself, you may run the lint task:
 
-### Run tests
+```bash
+npm run lint:check
+```
 
-### Deployment
+Or to automatically fix issues found (where possible):
 
-## Authors
+```bash
+npm run lint
+```
 
-👤 **Author1**
+You can also check against Prettier:
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+```bash
+npm run format:check
+```
 
-👤 **Author2**
+and to have it actually fix (to the best of its ability) any format issues, run:
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+```bash
+npm run format
+```
+
+You can also check against HTML Validator:
+
+```bash
+npm run html-validator
+```
+
+## Style Guides
+
+- [CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
+- [HTML Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)
+- [JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
+- [Git Style Guide](https://udacity.github.io/git-styleguide/)
+
+## 👤 Author
+
+- Github: [@author](https://github.com/author)
+- Twitter: [@author](https://twitter.com/author)
+- Linkedin: [@author](https://www.linkedin.com/in/author/)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](../../issues).
 
 ## Show your support
 
@@ -66,9 +87,9 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
+- Inspiration, resources/assets used
 - etc
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+[MIT licensed](./LICENSE).
