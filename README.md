@@ -1,10 +1,10 @@
-# Portfolio Website
+# Personal Portfolio 
 
-> A portfolio website is an online representation of work you have created, as well as your skills and experiences.
+> A personal portfolio  is an online representation of work  have created, as well as my skills and experiences.
 
 ![screenshot](./image_screenshot.png)
 
-A portfolio website is certain to make you available and searchable for new clients. It lets your potential employers find you the moment.It presents evidence of your relevant skills and abilities.
+A portfolio website is certain to make me available and searchable for new clients. It lets my potential employers find you the moment.It presents evidence of my relevant skills and abilities.
 
 ## Built With
 
