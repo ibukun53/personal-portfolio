@@ -1,6 +1,6 @@
-# Personal Portfolio 
+# Personal Portfolio
 
-> A personal portfolio  is an online representation of work  have created, as well as my skills and experiences.
+> A personal portfolio is an online representation of work have created, as well as my skills and experiences.
 
 ![screenshot](./image_screenshot.png)
 
