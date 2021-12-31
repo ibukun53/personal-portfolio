@@ -9,8 +9,6 @@
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 3%;
 }
 
@@ -55,17 +53,18 @@ h2 {
 
 p {
   line-height: 1.3rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 2%;
   width: 90%;
 }
 
 footer {
   width: auto;
+  height: 50px;
+}
+
+.navbar p footer {
   margin-right: auto;
   margin-left: auto;
-  height: 50px;
 }
 
 ul {
@@ -95,40 +94,31 @@ ul {
 .icons:hover {
   transform: translate(0, 5px);
   transition: all 500ms ease-in-out;
-}
-
-.git:hover {
-  background-color: purple;
-  fill: white;
   padding: 5px;
   border-radius: 5px;
 }
 
-.linked:hover {
-  background-color: #0077b5;
-  fill: white;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.twitter:hover {
-  background-color: #1da1f2;
-  fill: white;
-  padding: 5px;
+.size {
   width: 30px;
-  border-radius: 5px;
+  height: 21px;
 }
 
-.angellist:hover {
-  background-color: rgb(45, 42, 42);
-  fill: rgb(205, 232, 213);
-  padding: 5px;
-  border-radius: 5px;
+.whatsappsize {
+  width: 30px;
+  height: 30px;
 }
 
-.medium:hover {
-  fill: rgb(210, 208, 208);
-  padding: 5px;
-  border-radius: 5px;
-  background-color: rgb(35, 33, 33);
+.linkedsize {
+  width: 21px;
+  height: 20px;
+}
+
+.facebooksize {
+  width: 25px;
+  height: 30px;
+}
+
+.telegram:hover.facebook:hover.whatsapp:hover.git:hover.linked:hover {
+  background-color: rgb(243, 239, 239);
+  fill: rgb(228, 231, 229);
 }
