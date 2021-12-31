@@ -2,7 +2,7 @@
 
 > A personal portfolio is an online representation of work have created, as well as my skills and experiences.
 
-![screenshot](./image_screenshot.png)
+![screenshot](./image_Screenshot.png)
 
 A portfolio website is certain to make me available and searchable for new clients. It lets my potential employers find you the moment.It presents evidence of my relevant skills and abilities.
 
@@ -14,14 +14,14 @@ A portfolio website is certain to make me available and searchable for new clien
 
 ## Live Demo
 
-[Live Demo Link](https://app.netlify.com/teams/ibukun53/overview)
+[Live Demo Link](https://deploy-preview-1--uni-uni.netlify.app/)
 
 ### Development (Running locally)
 
 - Clone the project
 
 ```bash
-git clone https://github.com/user/html-css-template.git
+git clone https://github.com/ibukun53/personal-portfolio
 
 ```
 
@@ -70,9 +70,8 @@ npm run html-validator
 
 ## 👤 Author
 
-- Github: [@author](https://github.com/author)
-- Twitter: [@author](https://twitter.com/author)
-- Linkedin: [@author](https://www.linkedin.com/in/author/)
+- Github: [@author](https://github.com/ibukun53/)
+- Linkedin: [@author](https://www.linkedin.com/in/ibukun53/)
 
 ## 🤝 Contributing
 
@@ -83,12 +82,6 @@ Feel free to check the [issues page](../../issues).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration, resources/assets used
-- etc
 
 ## 📝 License
 
