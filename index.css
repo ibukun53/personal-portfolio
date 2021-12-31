@@ -39,22 +39,24 @@ main {
   text-decoration: none;
 }
 
-h1 {
+.heading {
   color: rgb(23, 43, 77);
-  font-size: 2.5em;
+  font-size: 2.4em;
   margin-bottom: 2%;
+  width: 90%;
 }
 
-h2 {
+.subheading {
   color: rgb(63, 176, 107);
   font-size: 2.5em;
-  margin-top: 1%;
+  margin-top: -1%;
+  width: 90%;
 }
 
 .summary {
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   margin-top: 1%;
-  width: 40%;
+  width: 46%;
 }
 
 .intro-section {
@@ -75,10 +77,10 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  width: 30%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5%;
+  margin-top: 2%;
   height: 100%;
   margin-bottom: 10%;
 }
@@ -116,9 +118,4 @@ h2 {
 .facebooksize {
   width: 25px;
   height: 30px;
-}
-
-.telegram:hover.facebook:hover.whatsapp:hover.git:hover.linked:hover {
-  background-color: rgb(243, 239, 239);
-  fill: rgb(228, 231, 229);
 }
