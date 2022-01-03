@@ -39,24 +39,35 @@ main {
   text-decoration: none;
 }
 
+.intro {
+  line-height: 52px;
+  font-family: inherit;
+  font-style: normal;
+  text-align: center;
+}
+
 .heading {
-  color: rgb(23, 43, 77);
-  font-size: 2.4em;
+  color: #172b4d;
+  font-size: 40px;
+  margin-top: 12%;
   margin-bottom: 2%;
-  width: 90%;
+  width: 80%;
 }
 
 .subheading {
-  color: rgb(63, 176, 107);
-  font-size: 2.5em;
+  color: #36b37e;
+  font-size: 40px;
   margin-top: -1%;
   width: 90%;
 }
 
 .summary {
-  line-height: 1.8rem;
-  margin-top: 1%;
-  width: 46%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 5%;
+  width: 64%;
 }
 
 .intro-section {
@@ -77,10 +88,10 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 30%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 2%;
+  margin-top: 15%;
   height: 100%;
   margin-bottom: 10%;
 }
@@ -90,12 +101,11 @@ main {
   padding: 0;
   margin: 0;
   color: #505f79;
-  transition: all 500ms ease-in-out;
 }
 
 .icon:hover {
-  transform: translate(0, 5px);
-  transition: all 500ms ease-in-out;
+  transform: translate(0, 2px);
+  transition: 500ms ease-out;
   padding: 5px;
   border-radius: 5px;
 }
