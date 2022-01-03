@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ubuntu, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 3%;
+}
+
+.link {
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 4px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+}
+
+main {
+  text-align: center;
+  background: url("./image/header.svg");
+  background-position: center top;
+  background-size: cover;
+  padding-top: 10%;
+}
+
+.welcome {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.intro {
+  line-height: 52px;
+  font-family: inherit;
+  font-style: normal;
+  text-align: center;
+}
+
+.heading {
+  color: #172b4d;
+  font-size: 40px;
+  margin-top: 12%;
+  margin-bottom: 2%;
+  width: 80%;
+}
+
+.subheading {
+  color: #36b37e;
+  font-size: 40px;
+  margin-top: -1%;
+  width: 90%;
+}
+
+.summary {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 5%;
+  width: 64%;
+}
+
+.intro-section {
+  width: auto;
+  height: 50px;
+}
+
+.margin-left-right-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.socials-list {
+  list-style-type: none;
+}
+
+.socials-lists-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin-top: 15%;
+  height: 100%;
+  margin-bottom: 10%;
+}
+
+.icon {
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  color: #505f79;
+}
+
+.icon:hover {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.size {
+  width: 30px;
+  height: 21px;
+}
+
+.whatsappsize {
+  width: 30px;
+  height: 30px;
+}
+
+.linkedsize {
+  width: 27px;
+  height: 30px;
+}
+
+.facebooksize {
+  width: 30px;
+  height: 40px;
+}
+
+.telegramsize {
+  width: 25px;
+  height: 30px;
+}
+
+.githubsize {
+  width: 25px;
+  height: 25px;
+}
