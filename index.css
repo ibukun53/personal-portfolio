@@ -89,8 +89,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
   width: 70%;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 15%;
   height: 100%;
   margin-bottom: 10%;
@@ -104,8 +102,6 @@ main {
 }
 
 .icon:hover {
-  transform: translate(0, 2px);
-  transition: 500ms ease-out;
   padding: 5px;
   border-radius: 5px;
 }
@@ -121,11 +117,21 @@ main {
 }
 
 .linkedsize {
-  width: 21px;
-  height: 20px;
+  width: 27px;
+  height: 30px;
 }
 
 .facebooksize {
+  width: 30px;
+  height: 40px;
+}
+
+.telegramsize {
   width: 25px;
   height: 30px;
+}
+
+.githubsize {
+  width: 25px;
+  height: 25px;
 }
