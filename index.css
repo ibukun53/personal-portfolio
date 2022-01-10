@@ -203,7 +203,7 @@ main {
   height: 1rem;
   width: 3rem;
   margin: 1rem;
-  padding: 0.8rem;
+  padding: 8px 12px;
   display: flex;
   float: left;
   text-align: center;
