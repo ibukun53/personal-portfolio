@@ -48,7 +48,7 @@ main {
 
 .heading {
   color: #172b4d;
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 12%;
   margin-bottom: 3%;
   width: 50%;
@@ -56,7 +56,7 @@ main {
 
 .subheading {
   color: #36b37e;
-  font-size: 50px;
+  font-size: 42px;
   margin-top: 2%;
   width: 50%;
 }
@@ -67,7 +67,7 @@ main {
   font-size: 20px;
   line-height: 28px;
   margin-top: 5%;
-  width: 64%;
+  width: 70%;
 }
 
 .intro-section {
@@ -139,23 +139,24 @@ main {
 .works-header {
   position: static;
   color: rgba(23, 43, 77, 1);
-  font-size: 50px;
+  font-size: 40px;
   font-style: normal;
   font-weight: bold;
   margin: 12% 25% 3%;
   text-align: center;
   justify-content: center;
-  width: 55%;
+  width: 45%;
 }
 
 .line {
-  width: 10%;
+  width: 6%;
   height: 9px;
   background-color: rgba(54, 179, 127, 1);
   display: inline-block;
   position: relative;
-  margin: 3% 45%;
-  margin-bottom: 3rem;
+  margin: 2% 45%;
+  margin-bottom: 5px;
+  margin-top: 2px;
   border-radius: 2px;
 }
 
@@ -176,8 +177,8 @@ main {
 .grid-item {
   background-color: rgba(255, 255, 255, 1);
   border: 8px solid #e5e5e5;
-  width: 24rem;
-  height: 35rem;
+  width: 20rem;
+  height: 32rem;
   border-radius: 25px;
   margin: 2.2rem;
   overflow: hidden;
@@ -191,42 +192,42 @@ main {
 
 .card {
   box-sizing: border-box;
-  border-radius: 5%;
+  border-radius: 3%;
   border: 5px;
   margin: 0.8rem;
   width: 26rem;
-  height: 38rem;
+  height: 40rem;
 }
 
 .card-img {
   display: block;
   border-radius: 5%;
-  width: 85%;
+  width: 70%;
   height: 17rem;
   object-fit: cover;
 }
 
 .card-header {
-  font-size: 2rem;
+  font-size: 24px;
+  width: 70%;
   font-weight: 600;
   color: #3a4a42;
-  margin-right: 2rem;
-  padding-top: 1rem;
+  margin-left: 5px;
+  padding-top: 10px;
   text-align: center;
   justify-content: center;
-  align-items: center;
   font-style: normal;
 }
 
 .card-tags {
-  font-size: 0.9rem;
+  font-size: 12px;
   color: black;
   background-color: #e5e5e5;
   border-radius: 0.3rem;
   height: 1rem;
   width: 3rem;
   margin: 2rem  0.5rem;
-  padding: 8px 12px;
+  padding: 8px 5px;
   display: flex;
   float: left;
   text-align: center;
@@ -238,24 +239,24 @@ main {
 
 .card-btn {
   display: block;
-  width: 10rem;
+  width: 7rem;
   padding: 1rem 1rem;
-  font-size: 1.3rem;
+  font-size: 17px;
   text-align: center;
-  color: white;
+  color: rgb(250, 246, 246);
   background-color: rgba(54, 179, 127, 1);
   border: none;
   border-radius: 0.4rem;
   transition: 0.2s;
   cursor: pointer;
-  margin: 7rem 6rem;
+  margin: 5rem 5rem;
 }
 
 .about {
   background: url("./image/about me 2.svg");
   background-repeat: no-repeat;
   background-position-x: right;
-  background-size: 7rem;
+  background-size: 4rem;
   padding-top: 2%;
 }
 
@@ -281,14 +282,13 @@ main {
   justify-content: center;
   color: #42526e;
   padding: 20px;
-  margin: 2rem;
 }
 
 .about2 {
   background: url("./image/about me 1.svg");
   background-repeat: no-repeat;
   background-position-x: left;
-  background-size: 7rem;
+  background-size: 4rem;
   padding: 8% 6%;
 }
 
@@ -325,6 +325,9 @@ main {
   margin: 1.5rem;
   overflow: hidden;
   cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .attributes {
@@ -333,15 +336,18 @@ main {
 
 .attribute-items {
   align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .attribute-ellip {
   position: static;
-  margin: 3em 10rem;
+  margin: 3em 8rem;
   width: 5rem;
   height: 5rem;
   border-radius: 20rem;
   background-color: rgba(255, 255, 255, 1);
+  align-items: center;
 }
 
 .attribute-img {
@@ -366,12 +372,12 @@ main {
   height: 1.5rem;
   width: 3rem;
   display: flex;
-  margin: 0.5rem 1rem  1rem 2rem;
-  padding: 8px 12px;
+  margin: 0.5rem 1rem  1rem 1rem;
+  padding: 8px 8px;
   float: left;
+  letter-spacing: 0.01em;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.01em;
   align-items: center;
   flex-direction: row;
 }
