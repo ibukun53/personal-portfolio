@@ -322,7 +322,7 @@ main {
   width: 24rem;
   height: 25rem;
   border-radius: 10px;
-  margin: -0.2rem;
+  margin: 1.5rem;
   overflow: hidden;
   cursor: pointer;
 }
