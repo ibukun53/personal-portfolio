@@ -48,7 +48,7 @@ main {
 
 .heading {
   color: #172b4d;
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 12%;
   margin-bottom: 3%;
   width: 50%;
@@ -56,7 +56,7 @@ main {
 
 .subheading {
   color: #36b37e;
-  font-size: 42px;
+  font-size: 40px;
   margin-top: 2%;
   width: 50%;
 }
@@ -319,8 +319,8 @@ main {
 .flex-box {
   background-color: rgba(235, 240, 238, 1);
   border: 2px solid rgba(193, 199, 208, 1);
-  width: 24rem;
-  height: 25rem;
+  width: 20rem;
+  height: 22rem;
   border-radius: 10px;
   margin: 1.5rem;
   overflow: hidden;
@@ -342,7 +342,7 @@ main {
 
 .attribute-ellip {
   position: static;
-  margin: 3em 8rem;
+  margin: 3em 7rem;
   width: 5rem;
   height: 5rem;
   border-radius: 20rem;
