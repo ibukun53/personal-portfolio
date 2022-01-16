@@ -205,52 +205,42 @@ main {
   object-fit: cover;
 }
 
-.card-content {
-  position: sticky;
-  box-sizing: border-box;
-  border: 5px;
-  width: 100%;
-  height: 100%;
-  margin-left: 2%;
-  background: white;
-  list-style-type: none;
-}
-
 .card-header {
-  font-size: 24px;
-  width: 90%;
+  font-size: 140%;
+  width: 100%;
+  height: 10%;
   font-weight: 600;
-  color: rgb(58, 74, 66);  
+  color: rgb(58, 74, 66);
   margin-left: auto;
   padding-top: 30px;
   text-align: center;
   justify-content: center;
   font-style: normal;
+  line-height: 32px;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.card-tags {
-  font-size: 12px;
-  color: black;
-  background-color: rgb(229, 229, 229);
-  height: 3%;
-  width: 5%;
-  float: left;
-  text-align: center;
+.card-content {
   display: flex;
-  flex-direction: row;
-  letter-spacing: 0.03em;
+  width: 96%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-tags {
   border-radius: 4px;
-  margin-right: 4%;
-  margin-left: 6%;
-  margin-top: 4%;
-  margin-bottom: 3%;
-  padding-top: 1%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: rgba(235, 240, 238, 1);
+  padding-top: 2%;
   padding-right: 3%;
   padding-bottom: 2%;
   padding-left: 3%;
@@ -258,23 +248,25 @@ ul{
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-
-  
-  
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
-.card-btn {
-  display: block;
-  width: 20%;
-  font-size: 17px;
+.see-projects {
+  text-decoration: none;
   text-align: center;
-  color: rgb(250, 246, 246);
-  background-color: rgb(54, 179, 127);
-  cursor: pointer;
-  padding: 1%;
-  border-radius: 0.4rem;
-  transition: all 0.2s ease 0s;
-  margin: auto;
+  margin-top: 5px;
+  border: 0;
+}
+
+.content-btn {
+  width: 79%;
+  margin-bottom: 5%;
+  border-radius: 4px;
+  padding: 2%;
+  background: rgba(54, 179, 127, 1);
+  align-items: center;
+  color: white;
 }
 
 .about {
@@ -385,15 +377,16 @@ ul{
   align-items: center;
   flex-direction: row;
   font-size: 12px;
+  flex-wrap: wrap;
+  text-align: center;
   color: rgba(54, 179, 126, 1);
   background-color: rgba(255, 255, 255, 1);
   border-radius: 0.3rem;
   height: 1.5rem;
-  width: 3rem;
+  width: 9%;
   padding: 8px 8px;
   float: left;
   letter-spacing: 0.01em;
-  text-align: center;
   justify-content: space-around;
   margin-right: 9%;
   margin-left: 5%;
