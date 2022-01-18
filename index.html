@@ -233,39 +233,26 @@
           I'm always interested in hearing about new project, so if you'd like to chat please get in
           touch.
         </h4>
-        <form id="fs-frm" method="post">
-            <input
-              type="text"
-              name="name"
-              id="full-name"
-              placeholder="First Name"
-              required=""
-              maxlength="30"
-            />
-            <input
-              type="email"
-              name="_replyto"
-              id="email-address"
-              placeholder="Email"
-              required=""
-            />
-            <textarea
-              rows="5"
-              name="message"
-              id="message"
-              placeholder="Enter text here"
-              required=""
-              maxlength="500"
-            ></textarea>
-            <input
-              type="hidden"
-              name="_subject"
-              id="email-subject"
-              value="Contact Form Submission"
-            />
-          </fieldset>
-          <input type="submit" value="Submit" />
+        <form method="post">
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="First Name"
+            required=""
+            maxlength="30"
+          />
+          <input type="email" id="email" name="replyto" placeholder="Email address" required="" />
+          <textarea
+            id="message"
+            rows="5"
+            name="message"
+            placeholder="Enter text here"
+            required=""
+            maxlength="50"
+          ></textarea>
         </form>
+        <input type="submit" value="Get in touch" />
         <div class="contact-img"></div>
       </section>
       <footer class="intro-section margin-left-right-auto">
