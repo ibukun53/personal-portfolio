@@ -479,6 +479,7 @@ input[type=submit] {
   background: #36b37f;
   width: 129px;
   height: 48px;
+  margin: auto;
 }
 
 input[type=submit]:hover {
