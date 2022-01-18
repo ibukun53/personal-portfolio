@@ -236,20 +236,25 @@
 
         <form>
           <div class="form-container">
-            <input type="text" id="fname" name="firstname" required placeholder="Full name" />
-            <br />
             <input
               type="text"
-              pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              id="fname"
+              name="firstname"
               required
-              placeholder="Email address "
+              placeholder="Full name"
+              minlength="10"
+              maxlength="30"
             />
+            <br />
+            <input type="email" id="email" required placeholder="Email address " />
             <br />
             <textarea
               id="subject"
               name="subject"
               placeholder="Enter text here"
               class="textarea"
+              maxlength="500"
+              required
             ></textarea>
           </div>
           <br />
