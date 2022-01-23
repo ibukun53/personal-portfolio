@@ -91,6 +91,7 @@ main {
   width: 20%;
   margin-top: -28%;
   height: 100%;
+  cursor: pointer;
   margin-bottom: 0%;
 }
 
@@ -114,26 +115,31 @@ main {
 .whatsappsize {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .linkedsize {
   width: 27px;
   height: 30px;
+  cursor: pointer;
 }
 
 .facebooksize {
   width: 30px;
   height: 40px;
+  cursor: pointer;
 }
 
 .telegramsize {
   width: 25px;
   height: 30px;
+  cursor: pointer;
 }
 
 .githubsize {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .vector-img {
@@ -429,7 +435,14 @@ ul {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 24px auto;
+  margin: 4px auto;
+  padding-left: 5px;
+}
+
+.form-containe {
+  position: sticky;
+  width: 80%;
+  margin-left: 20px;
 }
 
 input[type=text] {
@@ -482,47 +495,31 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  align-items: start;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+.desktop1 {
+  background: url("./image/desktop1.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 19%;
+  margin-left: 215%;
+  margin-top: -5%;
+  padding: 30% 73%;
+}
+
+.line2 {
+  width: 300%;
+  height: 9px;
+  background-color: grey;
+  margin-top: -10%;
+  border-radius: 2px;
+  transition: 2s;
+  cursor: pointer;
 }
 
 .socials-lists-item-after {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
-  margin-top: -15%;
-  height: 100%;
-}
-
-.desktop1 {
-  background: url("./image/desktop1.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: 9%;
-  margin-top: 20px;
-  padding: 0%;
-}
-
-.desktop2 {
-  background: url("./image/desktop2.svg");
-  background-repeat: no-repeat;
-  background-size: 20%;
-  margin: -40% auto 8%;
-  padding: 20% 15%;
-}
-
-.desktop3 {
-  background: url("./image/desktop3.svg");
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-size: 5%;
-  margin-top: -50%;
-  padding: 15% 8%;
+  width: 40%;
 }
 
 p {
@@ -532,41 +529,8 @@ p {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: rgba(66, 82, 110, 1);
+  color: rgb(66, 86, 119);
   margin-bottom: 30%;
-}
-
-a:link {
-  text-decoration: none;
-  color: rgba(66, 82, 110, 1);
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgba(66, 82, 110, 1);
-}
-
-a:hover {
-  text-decoration: underline;
-  color: rgba(66, 82, 110, 1);
-}
-
-.line2 {
-  width: 100%;
-  height: 9px;
-  background-color: grey;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 20px;
-  margin-top: -20%;
-  border-radius: 2px;
-  transition: 2s;
-  cursor: pointer;
-}
-
-.line2:hover {
-  background-color: rgb(59, 89, 141);
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -574,11 +538,11 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 90%;
+    width: 100%;
   }
 
   .grid-item {
-    margin-left: 40%;
+    margin-left: 10%;
   }
 
   .flex-container {
@@ -608,12 +572,12 @@ a:hover {
     font-style: normal;
     text-align: left;
     justify-content: left;
-    padding: 20px;
+    padding: 10px;
   }
 
   .desktop-images {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -622,36 +586,38 @@ a:hover {
     background: url("./image/desktop1.svg");
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 9%;
-    margin-top: 20px;
-    padding: 10% 8%;
+    background-size: 22%;
+    margin-left: 120%;
+    margin-top: -5%;
+    padding: 30% 73%;
   }
 
   .desktop2 {
     background: url("./image/desktop2.svg");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-position-x: left;
     background-size: 20%;
-    margin: -40% auto 8%;
-    padding: 20% 15%;
+    margin-left: -60%;
+    padding-top: 50%;
+    padding-left: 5px;
   }
 
   .desktop3 {
     background: url("./image/desktop3.svg");
     background-repeat: no-repeat;
     background-position-x: left;
-    background-size: 5%;
-    margin-top: -50%;
-    padding: 15% 8%;
+    background-size: 9%;
+    margin-left: -180%;
+    margin-top: -100%;
+    padding-top: 40%;
+    padding-left: 10%;
   }
 
   .line2 {
     width: 100%;
     height: 9px;
     background-color: grey;
-    display: inline-block;
-    position: relative;
-    margin-bottom: 20px;
-    margin-top: -20%;
+    margin-top: 0%;
     border-radius: 2px;
     transition: 2s;
     cursor: pointer;
@@ -659,6 +625,19 @@ a:hover {
 
   .line2:hover {
     background-color: rgb(59, 89, 141);
+  }
+
+  .socials-list-after {
+    list-style-type: none;
+  }
+
+  .socials-lists-item-after {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 100%;
     cursor: pointer;
+    margin-bottom: 0%;
   }
 }
