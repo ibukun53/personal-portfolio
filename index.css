@@ -587,7 +587,7 @@ p {
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 22%;
-    margin-left: 120%;
+    margin-left: 100%;
     margin-top: -5%;
     padding: 30% 73%;
   }
@@ -607,7 +607,7 @@ p {
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 9%;
-    margin-left: -180%;
+    margin-left: -100%;
     margin-top: -100%;
     padding-top: 40%;
     padding-left: 10%;
