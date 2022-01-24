@@ -578,7 +578,7 @@ p {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 22%;
-    margin-left: 203%;
+    margin-left: 140%;
     margin-top: 8%;
     padding: 40% 86%;
   }
@@ -587,9 +587,9 @@ p {
     background: url("./image/desktop2.svg");
     background-repeat: no-repeat;
     background-position-x: left;
-    background-size: 20%;
-    margin-left: -70%;
-    padding-top: 50%;
+    background-size: 10%;
+    margin-left: -20%;
+    padding-top: 30%;
     padding-left: 5px;
   }
 
