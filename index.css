@@ -439,7 +439,7 @@ ul {
   padding-left: 5px;
 }
 
-.form-containe {
+.form-container {
   position: sticky;
   width: 80%;
   margin-left: 20px;
@@ -500,9 +500,9 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: 19%;
-  margin-left: 215%;
-  margin-top: -5%;
-  padding: 30% 73%;
+  margin-left:100%;
+  margin-top:  8%;
+  padding: 40% 86%;
 }
 
 .line2 {
@@ -587,9 +587,9 @@ p {
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 22%;
-    margin-left: 120%;
-    margin-top: -5%;
-    padding: 30% 73%;
+    margin-left: 98%;
+    margin-top: 8%;
+    padding: 40% 86%;
   }
 
   .desktop2 {
@@ -607,7 +607,7 @@ p {
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 9%;
-    margin-left: -80%;
+    margin-left: -90%;
     margin-top: -80%;
     padding-top: 40%;
     padding-left: 10%;
