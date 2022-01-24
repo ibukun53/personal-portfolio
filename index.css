@@ -495,16 +495,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.desktop1 {
-  background: url("./image/desktop1.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 19%;
-  margin-left: 93%;
-  margin-top: 8%;
-  padding: 40% 86%;
-}
-
 .line2 {
   width: 300%;
   height: 9px;
@@ -583,6 +573,7 @@ p {
   }
 
   .desktop1 {
+    position: relative;
     background: url("./image/desktop1.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -607,7 +598,7 @@ p {
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 9%;
-    margin-left: -100%;
+    margin-left: -95%;
     margin-top: -80%;
     padding-top: 40%;
     padding-left: 10%;
