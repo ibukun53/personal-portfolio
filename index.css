@@ -498,10 +498,10 @@ input[type=submit]:hover {
 .desktop1 {
   background: url("./image/desktop1.svg");
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position: right;
   background-size: 19%;
-  margin-left:100%;
-  margin-top:  8%;
+  margin-left: 93%;
+  margin-top: 8%;
   padding: 40% 86%;
 }
 
@@ -585,9 +585,9 @@ p {
   .desktop1 {
     background: url("./image/desktop1.svg");
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position: right;
     background-size: 22%;
-    margin-left: 98%;
+    margin-left: 93%;
     margin-top: 8%;
     padding: 40% 86%;
   }
@@ -607,7 +607,7 @@ p {
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 9%;
-    margin-left: -90%;
+    margin-left: -100%;
     margin-top: -80%;
     padding-top: 40%;
     padding-left: 10%;
