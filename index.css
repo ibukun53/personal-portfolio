@@ -4,12 +4,18 @@
   font-family: ubuntu, sans-serif;
 }
 
-/** .navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
   margin-top: 3%;
+}
+
+.welcome {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 
 .link {
@@ -20,7 +26,6 @@
   border-radius: 1px;
   cursor: pointer;
 }
-**/
 
 .button {
   cursor: pointer;
@@ -28,18 +33,11 @@
 
 main {
   text-align: center;
-  background: url("./image/header.svg");
+  background: url("./image/header-mobile.svg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 10%;
-  margin-top: -1%;
-}
-
-.welcome {
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
 }
 
 .intro {
@@ -52,7 +50,8 @@ main {
 .heading {
   color: #172b4d;
   font-size: 40px;
-  margin-top: 6%;
+  margin-top: 12%;
+  margin-bottom: 3%;
   width: 80%;
 }
 
@@ -60,15 +59,16 @@ main {
   color: #36b37e;
   font-size: 40px;
   width: 70%;
+  margin-top: 2%;
 }
 
 .summary {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 30px;
-  margin-top: 0%;
-  width: 34%;
+  line-height: 28px;
+  margin-top: 5%;
+  width: 90%;
   color: #172b4d;
 }
 
@@ -216,7 +216,7 @@ main {
 .card-header {
   display: block;
   font-size: 140%;
-  width: 80%;
+  width: 100%;
   height: 8%;
   font-weight: 600;
   color: rgb(58, 74, 66);
@@ -446,7 +446,7 @@ ul {
 .form-container {
   position: sticky;
   width: 80%;
-  margin-left: 20px;
+  margin: auto;
 }
 
 input[type=text] {
@@ -492,8 +492,7 @@ input[type=submit] {
   background: #36b37f;
   width: 129px;
   height: 48px;
-  float: left;
-  margin-left: 40px;
+  margin: auto;
 }
 
 input[type=submit]:hover {
@@ -501,10 +500,10 @@ input[type=submit]:hover {
 }
 
 .line2 {
-  width: 300%;
-  height: 9px;
+  width: 30%;
+  height: 1px;
   background-color: grey;
-  margin-top: -10%;
+  margin: auto;
   border-radius: 2px;
   transition: 2s;
   cursor: pointer;
@@ -574,6 +573,7 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 80%;
+    margin-left: 20px;
   }
 
   .flex-box {
@@ -663,6 +663,131 @@ p {
     width: 20%;
     height: 100%;
     cursor: pointer;
+    margin-top: -28%;
     margin-bottom: 0%;
+  }
+
+  input[type=submit] {
+    float: left;
+    margin-left: 40px;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-0.5%);
+  }
+
+  .card {
+    box-sizing: border-box;
+    border: 5px;
+    width: 100%;
+    height: 88%;
+    margin-bottom: 5px;
+  }
+
+  .card-img {
+    display: block;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .card-header {
+    display: block;
+    font-size: 140%;
+    width: 80%;
+    height: 8%;
+    font-weight: 600;
+    color: rgb(58, 74, 66);
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    font-style: normal;
+    line-height: 32px;
+  }
+
+  .card-content {
+    display: flex;
+    width: 96%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  main {
+    text-align: center;
+    background: url("./image/header.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 10%;
+    margin-top: -1%;
+  }
+
+  .content-tags {
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    background: rgba(235, 240, 238, 1);
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-left: 1px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    height: 1.5rem;
+  }
+
+  .see-projects {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    border: 0;
+  }
+
+  .content-btn {
+    width: 20%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    border-radius: 4px;
+    padding: 2%;
+    background: #36b37f;
+    align-items: center;
+    color: #ffff;
+  }
+
+  .heading {
+    color: #172b4d;
+    font-size: 40px;
+    margin-top: 6%;
+    width: 80%;
+  }
+
+  .subheading {
+    color: #36b37e;
+    font-size: 40px;
+    width: 70%;
+  }
+
+  .summary {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0%;
+    width: 34%;
+    color: #172b4d;
   }
 }
