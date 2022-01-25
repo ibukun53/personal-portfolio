@@ -176,14 +176,16 @@ main {
   width: auto;
   height: auto;
   align-items: start;
+  margin: 10% 5% 10%;
 }
 
 .grid-item {
   display: inline-block;
   background-color: rgba(255, 255, 255, 1);
-  border: 2px solid #e5e5e5;
+  border: 6px solid #e5e5e5;
   width: 60%;
   height: 100%;
+  margin: auto;
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
@@ -228,7 +230,7 @@ main {
   width: 96%;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   margin-top: 10%;
@@ -255,7 +257,6 @@ ul {
   line-height: 14px;
   letter-spacing: 0.03em;
   text-align: left;
-  width: 15%;
   height: 1.5rem;
 }
 
@@ -531,6 +532,13 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+  }
+
+  .grid {
+    width: auto;
+    height: auto;
+    align-items: start;
+    margin: 5% 10%;
   }
 
   .grid-item {
