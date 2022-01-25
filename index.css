@@ -176,7 +176,7 @@ main {
   width: auto;
   height: auto;
   align-items: start;
-  margin: 10% 5% 10%;
+  margin-top: 5%;
 }
 
 .grid-item {
@@ -538,7 +538,6 @@ p {
     width: auto;
     height: auto;
     align-items: start;
-    margin: 5% 10%;
   }
 
   .grid-item {
