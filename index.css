@@ -4,7 +4,7 @@
   font-family: ubuntu, sans-serif;
 }
 
-.navbar {
+/** .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,6 +20,7 @@
   border-radius: 1px;
   cursor: pointer;
 }
+**/
 
 .button {
   cursor: pointer;
@@ -527,6 +528,27 @@ p {
 }
 
 @media only screen and (min-width: 1100px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+  }
+
+  .link {
+    display: inline-block;
+    width: 100px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+
+  .button {
+    cursor: pointer;
+  }
+
   .works {
     display: flex;
     height: auto;
