@@ -19,12 +19,17 @@
 }
 
 .link {
+  position: relative;
   height: 2px;
   width: 20px;
   background-color: black;
   margin-bottom: 4px;
   border-radius: 1px;
   cursor: pointer;
+}
+
+.links {
+  display: none;
 }
 
 .button {
@@ -528,19 +533,35 @@ p {
 }
 
 @media only screen and (min-width: 1100px) {
+  .welcome {
+    display: none;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 20%;
+    margin-top: 5px;
   }
 
   .link {
     display: inline-block;
-    width: 80px;
+    width: 120px;
+    cursor: pointer;
     margin: auto;
-    align-items: center;
-    text-align: center;
+  }
+
+  .links {
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 120px;
+    background-color: white;
+    margin: auto;
     border-radius: 1px;
     cursor: pointer;
   }
@@ -573,7 +594,6 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 80%;
-    margin-left: 20px;
   }
 
   .flex-box {
@@ -632,7 +652,7 @@ p {
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 9%;
-    margin-left: -95%;
+    margin-left: -90%;
     margin-top: -80%;
     padding-top: 40%;
     padding-left: 10%;
@@ -729,7 +749,6 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 10%;
-    margin-top: -1%;
   }
 
   .content-tags {
