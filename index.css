@@ -96,7 +96,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   width: 25%;
-  margin-top: -28%;
+  margin-top: 1%;
   height: 100%;
   cursor: pointer;
   margin-bottom: 0%;
@@ -169,6 +169,17 @@ main {
   text-align: center;
   justify-content: center;
   width: 55%;
+}
+
+.line {
+  width: 10%;
+  height: 9px;
+  background-color: rgba(54, 179, 127, 1);
+  display: inline-block;
+  position: relative;
+  margin: 3% 45%;
+  margin-bottom: 3rem;
+  border-radius: 2px;
 }
 
 .works {
@@ -316,7 +327,6 @@ ul {
   color: #172b4d;
   padding: 20px;
   margin-bottom: 40px;
-  margin-left: 40px;
   width: 90%;
 }
 
@@ -504,16 +514,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.line2 {
-  width: 30%;
-  height: 1px;
-  background-color: grey;
-  margin: auto;
-  border-radius: 2px;
-  transition: 2s;
-  cursor: pointer;
-}
-
 .socials-lists-item-after {
   display: flex;
   justify-content: space-evenly;
@@ -522,14 +522,48 @@ input[type=submit]:hover {
 }
 
 p {
-  margin-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: rgb(66, 86, 119);
-  margin-bottom: 30%;
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: rgb(66, 86, 119);
+  padding-bottom: 40%;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgba(66, 82, 110, 1);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgba(66, 82, 110, 1);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgba(66, 82, 110, 1);
+}
+
+.line2 {
+  width: 30%;
+  height: 10px;
+  background-color: rgb(22, 21, 21);
+  margin-top: 0%;
+  border-radius: 5px;
+  transition: 2s;
+  cursor: pointer;
+  margin-bottom: 2%;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -550,7 +584,7 @@ p {
 
   .link {
     display: inline-block;
-    width: 120px;
+    width: 70px;
     cursor: pointer;
     margin: auto;
   }
@@ -658,17 +692,17 @@ p {
     padding-left: 10%;
   }
 
-  .line2 {
-    width: 100%;
-    height: 1px;
+  .line3 {
+    width: 98%;
+    height: 4px;
     background-color: grey;
-    margin-top: 0%;
+    margin-top: 40%;
     border-radius: 2px;
     transition: 2s;
     cursor: pointer;
   }
 
-  .line2:hover {
+  .line3:hover {
     background-color: rgb(18, 99, 238);
   }
 
@@ -808,5 +842,25 @@ p {
     margin-top: 0%;
     width: 34%;
     color: #172b4d;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .line2 {
+    display: none;
+    width: 20%;
+    height: 10px;
+    background-color: rgb(22, 21, 21);
+    margin-top: 0%;
+    border-radius: 5px;
+    transition: 2s;
+    cursor: pointer;
+    margin-bottom: 2%;
   }
 }
