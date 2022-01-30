@@ -275,13 +275,13 @@ ul {
 .see-projects {
   text-decoration: none;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
   border: 0;
 }
 
 .content-btn {
   width: 20%;
-  margin-top: 8%;
+  margin-top: 7%;
   margin-bottom: 7%;
   border-radius: 4px;
   padding: 2%;
@@ -729,7 +729,7 @@ a:hover {
   }
 
   .subheading {
-    margin-top: -2%;
+    margin-top: -3%;
   }
 
   .summary {
