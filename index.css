@@ -568,9 +568,6 @@ a:hover {
   }
 
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 20%;
     margin-top: 5px;
   }
@@ -582,7 +579,7 @@ a:hover {
     margin: auto;
   }
 
-  a {
+  .links {
     display: inline-block;
     position: relative;
     height: 2px;
@@ -599,17 +596,9 @@ a:hover {
   }
 
   .works {
-    display: flex;
     height: auto;
-    flex-direction: row;
     width: 100%;
     flex-wrap: nowrap;
-  }
-
-  .grid {
-    width: auto;
-    height: auto;
-    align-items: start;
   }
 
   .grid-item {
@@ -618,8 +607,6 @@ a:hover {
   }
 
   .flex-container {
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
   }
 
@@ -630,21 +617,14 @@ a:hover {
   }
 
   .contact {
-    background-color: #ffff;
-    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-around;
     width: 80%;
   }
 
   .contact-text {
     margin-left: 15%;
     width: 30%;
-    height: 363px;
-    font-style: normal;
-    text-align: left;
-    justify-content: left;
     padding: 10px;
   }
 
@@ -706,9 +686,6 @@ a:hover {
   }
 
   .socials-lists-item-after {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     width: 20%;
     height: 100%;
     cursor: pointer;
@@ -725,52 +702,6 @@ a:hover {
     transform: translateY(-0.5%);
   }
 
-  .card {
-    box-sizing: border-box;
-    border: 5px;
-    width: 100%;
-    height: 88%;
-    margin-bottom: 5px;
-  }
-
-  .card-img {
-    display: block;
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-  }
-
-  .card-header {
-    display: block;
-    font-size: 140%;
-    width: 80%;
-    height: 8%;
-    font-weight: 600;
-    color: rgb(58, 74, 66);
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    font-style: normal;
-    line-height: 32px;
-  }
-
-  .card-content {
-    display: flex;
-    width: 96%;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-top: 10%;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
   main {
     text-align: center;
     background: url("./image/header.svg");
@@ -781,16 +712,6 @@ a:hover {
   }
 
   .content-tags {
-    border-radius: 4px;
-    margin-top: 12px;
-    margin-bottom: 10px;
-    background: rgba(235, 240, 238, 1);
-    padding: 2%;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 14px;
-    letter-spacing: 0.03em;
     text-align: left;
     height: 1.5rem;
   }
@@ -799,45 +720,14 @@ a:hover {
     background-size: 6%;
   }
 
-  .see-projects {
-    text-decoration: none;
-    text-align: center;
-    margin-top: 10px;
-    border: 0;
-  }
-
-  .content-btn {
-    width: 20%;
-    margin-top: 10%;
-    margin-bottom: 7%;
-    border-radius: 4px;
-    padding: 2%;
-    background: #36b37f;
-    align-items: center;
-    color: #ffff;
-  }
-
   .heading {
-    color: #172b4d;
-    font-size: 40px;
     margin-top: 6%;
-    width: 80%;
-  }
-
-  .subheading {
-    color: #36b37e;
-    font-size: 40px;
-    width: 70%;
   }
 
   .summary {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
     line-height: 30px;
     margin-top: 0%;
     width: 34%;
-    color: #172b4d;
   }
 
   .line {
@@ -850,13 +740,5 @@ a:hover {
 
   .line2 {
     display: none;
-    width: 20%;
-    height: 10px;
-    background-color: rgb(22, 21, 21);
-    margin-top: -17%;
-    border-radius: 5px;
-    transition: 2s;
-    cursor: pointer;
-    margin-bottom: 2%;
   }
 }
