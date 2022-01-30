@@ -14,7 +14,7 @@ A portfolio website is certain to make me available and searchable for new clien
 
 ## Live Demo
 
-[Live Demo Link](https://deploy-preview-1--uni-uni.netlify.app/)
+c
 
 ### Development (Running locally)
 
