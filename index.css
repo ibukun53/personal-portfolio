@@ -224,7 +224,7 @@ main {
 .card-img {
   display: block;
   width: 100%;
-  height: 50%;
+  height: 55%;
 }
 
 .card-header {
@@ -268,6 +268,7 @@ ul {
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.03em;
+  color: black;
 }
 
 .see-projects {
@@ -275,14 +276,19 @@ ul {
   text-align: center;
   margin-top: 8px;
   border: 0;
+  color: rgb(255, 255, 255);
+  background: #36b37f;
 }
 
 .content-btn {
-  margin-bottom: 15%;
   border-radius: 4px;
   padding: 2%;
+  margin: 10% 30%;
   background: #36b37f;
   align-items: center;
+}
+
+.btn {
   color: rgb(255, 255, 255);
 }
 
@@ -380,6 +386,8 @@ ul {
 
 .attribute-img {
   margin: 1rem 1.2rem;
+  width: 40px;
+  height: 40px;
 }
 
 .attri-content {
