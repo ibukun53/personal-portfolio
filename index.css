@@ -152,6 +152,7 @@ main {
   margin-top: 10%;
   cursor: pointer;
   width: 2%;
+  height: 2%;
 }
 
 .vector-img:hover {
