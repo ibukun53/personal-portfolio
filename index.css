@@ -286,7 +286,9 @@ ul {
   padding: 2%;
   margin: 10% 30% 5%;
   background: #36b37f;
+  image-rendering: optimizeQuality;
   align-items: center;
+  filter: contrast(150%);
 }
 
 .btn {
@@ -344,6 +346,7 @@ ul {
   font-size: 1.3rem;
   color: #dbdbdb;
   background-color: #36b37f;
+  filter: contrast(180%);
   border: none;
   border-radius: 0.4rem;
   transition: 0.2s;
@@ -430,6 +433,10 @@ ul {
   margin-bottom: 7%;
 }
 
+.contrast {
+  filter: contrast(100%);
+}
+
 .contact {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -499,6 +506,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   background: #36b37f;
+  filter: contrast(170%);
   width: 129px;
   height: 48px;
   margin: auto;
