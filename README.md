@@ -14,8 +14,6 @@ A portfolio website is certain to make me available and searchable for new clien
 
 ## Live Demo
 
-c
-
 ### Development (Running locally)
 
 - Clone the project
