@@ -93,7 +93,6 @@ main {
 
 .socials-lists-item {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   width: 50%;
   margin-top: 1%;
@@ -103,7 +102,7 @@ main {
 }
 
 .icon {
-  width: 20px;
+  width: 90px;
   padding: 0;
   margin: 0;
   color: #505f79;
@@ -153,6 +152,7 @@ main {
   margin-top: 10%;
   cursor: pointer;
   width: 2%;
+  height: 2%;
 }
 
 .vector-img:hover {
@@ -225,8 +225,7 @@ main {
 .card-img {
   display: block;
   width: 100%;
-  height: 70%;
-  object-fit: cover;
+  height: 50%;
 }
 
 .card-header {
@@ -270,6 +269,7 @@ ul {
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.03em;
+  color: black;
 }
 
 .see-projects {
@@ -277,17 +277,22 @@ ul {
   text-align: center;
   margin-top: 8px;
   border: 0;
+  color: rgb(255, 255, 255);
+  background: #36b37f;
 }
 
 .content-btn {
-  width: 20%;
-  margin-top: 7%;
-  margin-bottom: 7%;
   border-radius: 4px;
   padding: 2%;
+  margin: 10% 30% 5%;
   background: #36b37f;
+  image-rendering: optimizeQuality;
   align-items: center;
-  color: #ffff;
+  filter: contrast(150%);
+}
+
+.btn {
+  color: rgb(255, 255, 255);
 }
 
 .about {
@@ -339,8 +344,9 @@ ul {
   height: 2rem;
   padding: 1rem 1rem;
   font-size: 1.3rem;
-  color: #ffff;
+  color: #dbdbdb;
   background-color: #36b37f;
+  filter: contrast(180%);
   border: none;
   border-radius: 0.4rem;
   transition: 0.2s;
@@ -378,12 +384,14 @@ ul {
   width: 5rem;
   height: 5rem;
   border-radius: 20rem;
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
   align-items: center;
 }
 
 .attribute-img {
   margin: 1rem 1.2rem;
+  width: 40px;
+  height: 40px;
 }
 
 .attri-content {
@@ -410,7 +418,7 @@ ul {
   flex-wrap: wrap;
   text-align: center;
   color: #60c095;
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
   border-radius: 0.3rem;
   height: 1.5rem;
   width: 20%;
@@ -425,8 +433,12 @@ ul {
   margin-bottom: 7%;
 }
 
+.contrast {
+  filter: contrast(100%);
+}
+
 .contact {
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -452,7 +464,6 @@ ul {
 }
 
 .form-container {
-  position: sticky;
   width: 80%;
   margin: auto;
 }
@@ -465,7 +476,6 @@ input[type=text] {
   box-sizing: border-box;
   margin-top: 18px;
   margin-bottom: 12px;
-  resize: vertical;
 }
 
 input[type=email] {
@@ -476,7 +486,6 @@ input[type=email] {
   box-sizing: border-box;
   margin-top: 18px;
   margin-bottom: 12px;
-  resize: vertical;
 }
 
 textarea {
@@ -488,7 +497,6 @@ textarea {
   box-sizing: border-box;
   margin-top: 18px;
   margin-bottom: 12px;
-  resize: vertical;
 }
 
 input[type=submit] {
@@ -498,6 +506,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   background: #36b37f;
+  filter: contrast(170%);
   width: 129px;
   height: 48px;
   margin: auto;
@@ -509,9 +518,8 @@ input[type=submit]:hover {
 
 .socials-lists-item-after {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  width: 40%;
+  width: 70%;
 }
 
 p {

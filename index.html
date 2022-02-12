@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My personal portfolio</title>
+    <meta
+      name="description"
+      content="A personal portfolio is an online representation of work that was created, as well as my skills and experiences."
+    />
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- Top Navigation Menu -->
-    <nav class="navbar margin-left-right-auto">
+    <nav class="navbar margin-left-right-auto" id="portfolio">
       <a class="welcome" href="#">Welcome</a>
       <div class="button">
-        <div class="link"><a class="links" href="" target="_blank">Portfolio</a></div>
-        <div class="link"><a class="links" href="" target="_blank">About</a></div>
-        <div class="link"><a class="links" href="" target="_blank">Contact</a></div>
+        <div class="link"><a class="links" href="#portfolio">Portfolio</a></div>
+        <div class="link"><a class="links" href="#about">About</a></div>
+        <div class="link"><a class="links" href="#contact">Contact</a></div>
       </div>
     </nav>
     <main>
@@ -31,8 +35,8 @@
           <ul class="socials-list">
             <li class="socials-lists-item margin-left-right-auto">
               <div class="icon github">
-                <a href="https://github.com/ibukun53/"
-                  ><svg
+                <a href="https://github.com/ibukun53/" aria-label="Github">
+                  <svg
                     class="githubsize"
                     viewBox="0 0 19 20"
                     fill="none"
@@ -45,7 +49,7 @@
                 ></a>
               </div>
               <div class="icon whatsapp">
-                <a href="https://wa.me/2347013729933">
+                <a href="https://wa.me/2347013729933" aria-label="Whatsapp">
                   <svg
                     class="whatsappsize"
                     fill="#000000"
@@ -60,8 +64,8 @@
                 </a>
               </div>
               <div class="icon linked">
-                <a href="https://www.linkedin.com/in/ibukun53/"
-                  ><svg
+                <a href="https://www.linkedin.com/in/ibukun53/" aria-label="Linkedlin">
+                  <svg
                     class="linkedsize"
                     viewBox="0 0 21 20"
                     fill="none"
@@ -82,7 +86,7 @@
                 ></a>
               </div>
               <div class="icon facebook">
-                <a href="https://web.facebook.com/debby.blessing.1460">
+                <a href="https://web.facebook.com/debby.blessing.1460" aria-label="Facebook">
                   <svg
                     class="facebooksize"
                     fill="#000000"
@@ -92,11 +96,12 @@
                     <path
                       d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
                       fill="#505F79"
-                    /></svg
-                ></a>
+                    />
+                  </svg>
+                </a>
               </div>
               <div class="icon telegram">
-                <a href="https://t.me/debbie1234">
+                <a href="https://t.me/debbie1234" aria-label="telegram">
                   <svg
                     class="telegramsize"
                     fill="#000000"
@@ -116,57 +121,63 @@
       </section>
       <article class="recent">
         <img class="vector-img" src="./image/vector.svg" alt="vector" />
-        <h2 class="works-header">My Recent Works</h2>
+        <h2 class="works-header" id="about">My Recent Works</h2>
         <span class="line"></span>
         <article class="works">
           <div class="grid">
             <div class="grid-item">
               <div class="card">
-                <img class="card-img" src="./image/Screenshot.png" alt="screenshot" />
-                <h4 class="card-header">Multi-Post Stories Gain+Glory</h4>
+                <img class="card-img" src="./image/Screenshot.png" alt="page" />
+                <h3 class="card-header">Multi-Post Stories Gain+Glory</h3>
                 <ul class="card-content margin-left-right-auto">
                   <li class="content-tags">Ruby on rails</li>
                   <li class="content-tags">css</li>
                   <li class="content-tags">Javascript</li>
                   <li class="content-tags">html</li>
                 </ul>
-                <button-type name="button " class="see-projects content-btn"
-                  >See Project</button-type
-                >
+                <div class="content-btn">
+                  <a href="#" aria-label="button">
+                    <button-style class="see-projects">See Project </button-style>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="grid">
             <div class="grid-item">
               <div class="card">
-                <img class="card-img" src="./image/Screenshot.png" alt="screenshot" />
-                <h4 class="card-header">Multi-Post Stories Gain+Glory</h4>
+                <img class="card-img" src="./image/Screenshot.png" alt="page" />
+                <h3 class="card-header">Multi-Post Stories Gain+Glory</h3>
                 <ul class="card-content margin-left-right-auto">
                   <li class="content-tags">Ruby on rails</li>
                   <li class="content-tags">css</li>
                   <li class="content-tags">Javascript</li>
                   <li class="content-tags">html</li>
                 </ul>
-                <button-type name="button " class="see-projects content-btn"
-                  >See Project</button-type
-                >
+                <div class="content-btn">
+                  <a href="#" aria-label="button">
+                    <button-style class="see-projects">See Project </button-style>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="grid">
             <div class="grid-item">
               <div class="card">
-                <img class="card-img" src="./image/Screenshot.png" alt="screenshot" />
-                <h4 class="card-header">Multi-Post Stories Gain+Glory</h4>
+                <img class="card-img" src="./image/Screenshot.png" alt="page" />
+                <h3 class="card-header">Multi-Post Stories Gain+Glory</h3>
                 <ul class="card-content margin-left-right-auto">
                   <li class="content-tags">Ruby on rails</li>
                   <li class="content-tags">css</li>
                   <li class="content-tags">Javascript</li>
                   <li class="content-tags">html</li>
                 </ul>
-                <button-type name="button " class="see-projects content-btn"
-                  >See Project</button-type
-                >
+                <div class="content-btn">
+                  <a href="#" aria-label="button">
+                    <button-style class="see-projects">See Project </button-style>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -175,64 +186,74 @@
           <div class="grid">
             <div class="grid-item">
               <div class="card">
-                <img class="card-img" src="./image/Screenshot.png" alt="screenshot" />
-                <h4 class="card-header">Multi-Post Stories Gain+Glory</h4>
+                <img class="card-img" src="./image/Screenshot.png" alt="page" />
+                <h3 class="card-header">Multi-Post Stories Gain+Glory</h3>
                 <ul class="card-content margin-left-right-auto">
                   <li class="content-tags">Ruby on rails</li>
                   <li class="content-tags">css</li>
                   <li class="content-tags">Javascript</li>
                   <li class="content-tags">html</li>
                 </ul>
-                <button-type name="button " class="see-projects content-btn"
-                  >See Project</button-type
-                >
+                <div class="content-btn">
+                  <a href="#" aria-label="button">
+                    <button-style class="see-projects">See Project </button-style>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="grid">
             <div class="grid-item">
               <div class="card">
-                <img class="card-img" src="./image/Screenshot.png" alt="screenshot" />
-                <h4 class="card-header">Multi-Post Stories Gain+Glory</h4>
+                <img class="card-img" src="./image/Screenshot.png" alt="page" />
+                <h3 class="card-header">Multi-Post Stories Gain+Glory</h3>
                 <ul class="card-content margin-left-right-auto">
                   <li class="content-tags">Ruby on rails</li>
                   <li class="content-tags">css</li>
                   <li class="content-tags">Javascript</li>
                   <li class="content-tags">html</li>
                 </ul>
-                <button-type name="button " class="see-projects content-btn"
-                  >See Project</button-type
-                >
+                <div class="content-btn">
+                  <a href="#top" aria-label="button">
+                    <button-style class="see-projects">See Project </button-style>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="grid">
             <div class="grid-item">
               <div class="card">
-                <img class="card-img" src="./image/Screenshot.png" alt="screenshot" />
-                <h4 class="card-header">Multi-Post Stories Gain+Glory</h4>
+                <img class="card-img" src="./image/Screenshot.png" alt="page" />
+                <h3 class="card-header">Multi-Post Stories Gain+Glory</h3>
                 <ul class="card-content margin-left-right-auto">
                   <li class="content-tags">Ruby on rails</li>
                   <li class="content-tags">css</li>
                   <li class="content-tags">Javascript</li>
                   <li class="content-tags">html</li>
                 </ul>
-                <button-type name="button " class="see-projects content-btn"
-                  >See Project</button-type
-                >
+                <div class="content-btn">
+                  <a href="#" aria-label="button">
+                    <button-style class="see-projects">See Project </button-style>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </article>
       </article>
       <section class="about">
-        <h1 class="about-header">About Me</h1>
+        <h2 class="about-header">About Me</h2>
         <p class="about-text">
           I can help you build a product,feature or website Look through some of my work and
           experience! If you like what you see and have a project you need coded,dont hestiate to
           contact me
         </p>
-        <button-type class="about-btn">Get My Resume</button-type>
+        <div class="about-btn">
+          <a href="#" target="_blank" aria-label="button">
+            <button-type class="btn">Get My Resume </button-type>
+          </a>
+        </div>
         <div class="about2"></div>
       </section>
       <section class="flex-container margin-left-right-auto">
@@ -240,42 +261,42 @@
           <p class="attribute-ellip">
             <img class="attribute-img" src="./image/language.svg" alt="lang" />
           </p>
-          <h4 class="attribute-title">Language</h4>
+          <h3 class="attribute-title">Language</h3>
           <ul class="attri-content">
-            <li class="attribute-tags">Javascript</li>
-            <li class="attribute-tags">Ruby</li>
-            <li class="attribute-tags">Html</li>
-            <li class="attribute-tags">Css</li>
+            <li class="attribute-tags contrast">Javascript</li>
+            <li class="attribute-tags contrast">Ruby</li>
+            <li class="attribute-tags contrast">Html</li>
+            <li class="attribute-tags contrast">Css</li>
           </ul>
         </div>
         <div class="flex-box">
           <p class="attribute-ellip">
             <img class="attribute-img" src="./image/framework.svg" alt="framework" />
           </p>
-          <h4 class="attribute-title">Framework</h4>
+          <h3 class="attribute-title">Framework</h3>
           <ul class="attri-content">
-            <li class="attribute-tags">Bootstrap</li>
-            <li class="attribute-tags">Ruby</li>
-            <li class="attribute-tags">RSpec</li>
-            <li class="attribute-tags">Capybara</li>
-            <li class="attribute-tags">Selenium</li>
+            <li class="attribute-tags contrast">Bootstrap</li>
+            <li class="attribute-tags contrast">Ruby</li>
+            <li class="attribute-tags contrast">RSpec</li>
+            <li class="attribute-tags contrast">Capybara</li>
+            <li class="attribute-tags contrast">Selenium</li>
           </ul>
         </div>
         <div class="flex-box">
           <p class="attribute-ellip">
             <img class="attribute-img" src="./image/skill.svg" alt="skill" />
           </p>
-          <h4 class="attribute-title">Skills</h4>
+          <h3 class="attribute-title">Skills</h3>
           <ul class="attri-content">
-            <li class="attribute-tags">Codekit</li>
-            <li class="attribute-tags">Github</li>
-            <li class="attribute-tags">Codepen</li>
-            <li class="attribute-tags">Gitlab</li>
-            <li class="attribute-tags">Terminal</li>
+            <li class="attribute-tags contrast">Codekit</li>
+            <li class="attribute-tags contrast">Github</li>
+            <li class="attribute-tags contrast">Codepen</li>
+            <li class="attribute-tags contrast">Gitlab</li>
+            <li class="attribute-tags contrast">Terminal</li>
           </ul>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h4 class="contact-text">
           I'm always interested in hearing about new project, so if you'd like to chat please get in
           touch.
@@ -311,8 +332,8 @@
           <ul class="socials-list-after">
             <li class="socials-lists-item-after margin-left-right-auto">
               <div class="icon github">
-                <a href="https://github.com/ibukun53/"
-                  ><svg
+                <a href="https://github.com/ibukun53/" aria-label="github">
+                  <svg
                     class="githubsize"
                     viewBox="0 0 19 20"
                     fill="none"
@@ -325,7 +346,7 @@
                 ></a>
               </div>
               <div class="icon whatsapp">
-                <a href="https://wa.me/2347013729933">
+                <a href="https://wa.me/2347013729933" aria-label="whatsapp">
                   <svg
                     class="whatsappsize"
                     fill="#000000"
@@ -340,7 +361,7 @@
                 </a>
               </div>
               <div class="icon linked">
-                <a href="https://www.linkedin.com/in/ibukun53/"
+                <a href="https://www.linkedin.com/in/ibukun53/" aria-label="linkedin"
                   ><svg
                     class="linkedsize"
                     viewBox="0 0 21 20"
@@ -362,7 +383,7 @@
                 ></a>
               </div>
               <div class="icon facebook">
-                <a href="https://web.facebook.com/debby.blessing.1460">
+                <a href="https://web.facebook.com/debby.blessing.1460" aria-label="facebook">
                   <svg
                     class="facebooksize"
                     fill="#000000"
@@ -376,7 +397,7 @@
                 ></a>
               </div>
               <div class="icon telegram">
-                <a href="https://t.me/debbie1234">
+                <a href="https://t.me/debbie1234" aria-label="Telegram">
                   <svg
                     class="telegramsize"
                     fill="#000000"
