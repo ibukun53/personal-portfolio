@@ -18,22 +18,29 @@
   text-decoration: none;
 }
 
-.link {
+.menuBtn {
   position: relative;
-  height: 2px;
-  width: 20px;
+  height: 5%;
+  width: 5%;
   background-color: black;
-  margin-bottom: 4px;
+  margin: auto;
   border-radius: 1px;
   cursor: pointer;
+  left: 35%;
 }
 
 .links {
-  display: none;
-}
-
-.button {
-  cursor: pointer;
+  display: block;
+  width: 15%;
+  height: 10%;
+  position: fixed;
+  top: 2%;
+  right: -200px;
+  transition: 0.5s;
+  color: #080808;
+  background: #fff;
+  padding: 7px 5px 7px 15px;
+  margin: 45px 20px;
 }
 
 main {
@@ -580,18 +587,15 @@ a:hover {
     margin-top: 5px;
   }
 
-  .link {
-    display: inline-block;
-    width: 70px;
-    cursor: pointer;
-    margin: auto;
+  .menuBtn {
+    display: none;
   }
 
   .links {
     display: inline-block;
     position: relative;
     height: 2px;
-    width: 120px;
+    width: 220px;
     background-color: white;
     margin: auto;
     border-radius: 1px;
