@@ -14,12 +14,26 @@
     <!-- Top Navigation Menu -->
     <nav class="navbar margin-left-right-auto" id="portfolio">
       <a class="welcome" href="#">Welcome</a>
-      <div class="button">
-        <div class="link"><a class="links" href="#portfolio">Portfolio</a></div>
-        <div class="link"><a class="links" href="#about">About</a></div>
-        <div class="link"><a class="links" href="#contact">Contact</a></div>
+      <img src="image/menuBtn.png" alt="menuBtn" class="menuBtn" />
+      <div class="links">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
+    <script>
+      var menuBtn = document.getElementById('.menuBtn');
+      var links = document.getElementById('.links');
+
+      links.style.right = '-200px';
+      menuBtn.onclick = function () {
+        if (links.style.right == '-200px') {
+          links.style.right = '0';
+        } else {
+          links.style.right = '-200px';
+        }
+      };
+    </script>
     <main>
       <section class="intro">
         <h1 class="heading margin-left-right-auto">Hey there.I'm Blessing</h1>
