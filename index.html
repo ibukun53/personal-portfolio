@@ -12,28 +12,26 @@
   </head>
   <body>
     <!-- Top Navigation Menu -->
-    <nav class="navbar margin-left-right-auto" id="portfolio">
-      <a id="welcome" href="#">Welcome</a>
-      <div id="links">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <div class="container">
+      <div class="navbar margin-left-right-auto" id="portfolio">
+        <a id="welcome" href="#">Welcome</a>
+        <div id="navToggle" class="nav-toggle" onclick="myFunction()">
+          <script src="index.js"></script>
+          <img class="navIcon" src=
+          https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg
+          alt="hamburger menu"/> <img class="navIcon hidden" src=
+          https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg
+          alt="close hamburger" />
+        </div>
+        <nav>
+          <ul class="links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <img src="image/menuBtn.png" alt="menuBtn" class="menuBtn" />
-      </a>
-    </nav>
-    <script>
-      function myFunction() {
-        var x = document.getElementById('links');
-        if (x.style.display === 'block') {
-          x.style.display = 'none';
-        } else {
-          x.style.display = 'block';
-        }
-      }
-    </script>
-
+    </div>
     <main>
       <section class="intro">
         <h1 class="heading margin-left-right-auto">Hey there.I'm Blessing</h1>
