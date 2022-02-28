@@ -12,26 +12,20 @@
   </head>
   <body>
     <!-- Top Navigation Menu -->
-    <div class="container">
-      <div class="navbar margin-left-right-auto" id="portfolio">
-        <a id="welcome" href="#">Welcome</a>
-        <div id="navToggle" class="nav-toggle" onclick="myFunction()">
-          <script src="index.js"></script>
-          <img class="navIcon" src=
-          https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg
-          alt="hamburger menu"/> <img class="navIcon hidden" src=
-          https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg
-          alt="close hamburger" />
-        </div>
-        <nav>
-          <ul class="links">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <nav class="navbar margin-left-right-auto" id="portfolio">
+      <a id="welcome" href="#">Welcome</a>
+      <div class="menu-toggle" id="mobile-menu " ;>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <span class="bar"></span>
       </div>
-    </div>
+      <ul class="nav-menu">
+        <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+        <li><a href="#about" class="nav-links">About</a></li>
+        <li><a href="#contact" class="nav-links">Contact</a></li>
+      </ul>
+    </nav>
+
     <main>
       <section class="intro">
         <h1 class="heading margin-left-right-auto">Hey there.I'm Blessing</h1>
@@ -430,5 +424,6 @@
         </div>
       </footer>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
