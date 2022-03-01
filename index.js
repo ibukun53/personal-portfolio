@@ -57,12 +57,14 @@ window.addEventListener('mouseup', function(e) {
 });
 */
 
-const menu = document.querySelector('mobile-menu');
-const menulist = document.querySelector('nav-menu');
-
-menu.addEventListener('click', function () {
-  menu.classList.toggle('.is-active');
-  menuLists.classList.toggle('active');
-});
-
-console.log();
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-menu');
+// Display mobile menu
+const mobieMenu = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+};
+menu.addEventListener('click', mobieMenu);
+function myFunction() {
+  document.getElementById('demo').innerHTML = 'Hello World';
+}
