@@ -5,57 +5,74 @@
 }
 
 .navbar {
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  margin-top: 3%;
+  font-size: 1.2rem;
+  position: relative;
 }
 
 #welcome {
   font-weight: bold;
 }
 
-.menu-toggle .bar {
-  width: 30px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-out;
-  background: black;
-}
-
-.mobile-menu {
-  display: block;
-  top: 10%;
-  right: 5%;
+.nav-menu {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: -1000px;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: -1;
+  right: 0%;
 }
 
 .nav-menu.active {
-  background-color: #010101;
-  top: 100%;
+  top: 40%;
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 99;
-  height: 60vh;
-  font-size: 1.6rem;
+  height: 120px;
+  font-size: 20px;
 }
 
-.nav-menu {
-  width: 26%;
-  position: absolute;
-  top: 2%;
-  right: 0%;
-  transition: 0.5s;
-  color: #080808;
-  margin: 40px 10px;
-  text-decoration: none;
-}
-
-.navbar a {
-  padding: 10px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background: #000;
+  cursor: pointer;
   display: block;
+}
+
+.navbar-item {
+  width: 100%;
+}
+
+.nav-links {
+  text-align: right;
+  padding: 15px;
+  width: 80%;
+  right: 0%;
+  display: table;
+  color: #fff;
+}
+
+.nav-links:hover {
+  color: #3b6645;
+  transition: all 0.3s ease;
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  transform: translate(5%, 20%);
 }
 
 #mobile-menu.is-active .bar:nth-child(2) {
@@ -602,31 +619,8 @@ a:hover {
 }
 
 @media only screen and (min-width: 1100px) {
-  .navbar {
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 50rem;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  .nav-toggle {
+  .menu-toggle .bar {
     display: none;
-  }
-
-  .open {
-    height: 20vh;
-  }
-
-  nav {
-    width: 200%;
-    height: auto;
   }
 
   #welcome {
@@ -635,10 +629,6 @@ a:hover {
 
   li a {
     padding: 0 10px;
-  }
-
-  .button {
-    cursor: pointer;
   }
 
   .works {
