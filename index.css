@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  background-color: grey;
+  background-color: #ffffff;
   background-size: cover;
   background-blend-mode: overlay;
   height: auto;
@@ -30,7 +30,6 @@
   height: 0;
   overflow: hidden;
   width: 100px;
-  transition: 250ms height ease-in-out;
 }
 
 .nav-menu.active {
