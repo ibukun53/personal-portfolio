@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  background-color: #ffffff;
+  background-color: #fff;
   background-size: cover;
   background-blend-mode: overlay;
   height: auto;
@@ -27,6 +27,8 @@
 }
 
 .nav-menu {
+  top: 10%;
+  position: fixed;
   height: 0;
   overflow: hidden;
   width: 100px;
@@ -72,7 +74,7 @@
 }
 
 #mobile-menu.is-active {
-  position: absolute;
+  position: fixed;
   top: 1%;
 }
 
