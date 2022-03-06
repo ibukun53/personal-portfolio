@@ -6,20 +6,18 @@
 
 .navbar {
   background-color: #fff;
-  background-size: cover;
-  background-blend-mode: overlay;
   height: auto;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  position: relative;
-  max-width: 100rem;
-  margin: 5px auto;
+  position: fixed;
+  width: 100%;
+  margin: -5px auto;
 }
 
 #welcome {
   font-weight: bold;
-  margin: 5% 10px;
+  margin: 2% 10px;
 }
 
 #welcome.is-active {
@@ -28,7 +26,6 @@
 
 .nav-menu {
   top: 10%;
-  position: fixed;
   height: 0;
   overflow: hidden;
   width: 100px;
@@ -53,10 +50,12 @@
 }
 
 .nav-links {
+  font-weight: bold;
   text-align: left;
   padding: 15px;
   width: 80%;
   right: 0%;
+  font-size: 20px;
   display: table;
   color: #fff;
 }
