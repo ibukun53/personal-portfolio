@@ -6,11 +6,6 @@ const mobileMenu = () => {
   menuLinks.classList.toggle('active');
 };
 menu.addEventListener('click', mobileMenu);
-function myFunction() {}
 // Display nav menu
-const navMenu = () => {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
-};
+const navMenu = () => {};
 menuLinks.addEventListener('click',navMenu);
-function myFunction() {}
