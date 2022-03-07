@@ -17,7 +17,7 @@
 
 #welcome {
   font-weight: bold;
-  margin: 2% 10px;
+  margin: 5% 5%;
 }
 
 #welcome.is-active {
@@ -621,48 +621,37 @@ a:hover {
 }
 
 @media only screen and (min-width: 1100px) {
-  .nav-menu {
+  .navbar {
+    background-color: #fff;
+    height: auto;
     display: flex;
-    grid-template-rows: auto;
-    margin: 0;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
     width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: -1;
-    right: 0%;
+    margin: -5px auto;
   }
 
-  .nav-menu.active {
-    top: 40%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 99;
-    height: 120px;
-    font-size: 20px;
-  }
-
-  .menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease;
-    background: #000;
-    cursor: pointer;
+  .nav-menu {
+    top: 10%;
+    height: 0;
+    overflow: hidden;
+    width: 100px;
     display: block;
   }
 
-  .navbar-item {
-    width: 100%;
+  .menu-toggle .bar {
+    display: none;
   }
 
   .nav-links {
-    text-align: right;
+    font-weight: bold;
+    text-align: left;
     padding: 15px;
     width: 80%;
     right: 0%;
-    display: table;
+    font-size: 20px;
+    display: block;
     color: #fff;
   }
 
@@ -672,18 +661,11 @@ a:hover {
   }
 
   #mobile-menu {
-    position: absolute;
-    top: 20%;
+    position: relative;
+    top: 15%;
     right: 5%;
     transform: translate(5%, 20%);
-  }
-
-  #welcome {
-    padding: 0 20%;
-  }
-
-  li a {
-    padding: 0 10px;
+    display: none;
   }
 
   .works {
