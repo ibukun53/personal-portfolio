@@ -5,34 +5,42 @@
 }
 
 .navbar {
-  background-color: #fff;
-  height: auto;
+  background: #fff;
+  height: 50px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  position: fixed;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  margin: -5px auto;
+  margin: 5px 0 auto;
 }
 
 #welcome {
   font-weight: bold;
-  margin: 5% 5%;
-}
-
-#welcome.is-active {
-  overflow: hidden;
+  margin: 3% 5%;
+  font-size: 15px;
 }
 
 .nav-menu {
-  top: 10%;
-  height: 0;
-  overflow: hidden;
-  width: 100px;
+  display: none;
+  position: absolute;
+  margin: 45px 0;
 }
 
 .nav-menu.active {
-  height: 200vh;
+  height: 11950%;
+  position: absolute;
+  display: block;
+  background-color: rgb(219, 219, 217);
+  width: 100%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .menu-toggle .bar {
@@ -622,36 +630,49 @@ a:hover {
 
 @media only screen and (min-width: 1100px) {
   .navbar {
-    background-color: #fff;
-    height: auto;
+    background: #fff;
+    height: 2px;
+    display: flex;
+  }
+
+  .navbar__container {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    margin: -5px auto;
+    margin: 0 25% auto;
+  }
+
+  #welcome {
+    font-weight: bold;
+    margin: 6% 5%;
+    font-size: 15px;
   }
 
   .nav-menu {
-    top: 10%;
-    height: 0;
-    overflow: hidden;
-    width: 100px;
-    display: block;
+    display: inline-flex;
+    position: absolute;
+    margin: 1% 160px;
+  }
+
+  .nav-menu.active {
+    display: inline-flex;
+    position: relative;
+    margin: 5% 10%;
+    background-color: white;
   }
 
   .menu-toggle .bar {
     display: none;
   }
 
+  .navbar-item {
+    width: 100%;
+  }
+
   .nav-links {
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     padding: 15px;
-    width: 80%;
-    right: 0%;
     font-size: 20px;
-    display: block;
     color: #fff;
   }
 
@@ -661,10 +682,10 @@ a:hover {
   }
 
   #mobile-menu {
-    position: relative;
-    top: 15%;
-    right: 5%;
-    transform: translate(5%, 20%);
+    display: none;
+  }
+
+  #mobile-menu.is-active {
     display: none;
   }
 
