@@ -11,7 +11,6 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
 }
 
 .navbar__container {
@@ -34,7 +33,7 @@
 }
 
 .nav-menu.active {
-  height: 11950%;
+  height: 11650%;
   position: absolute;
   display: block;
   background-color: rgb(219, 219, 217);
@@ -75,7 +74,7 @@
 
 #mobile-menu {
   position: absolute;
-  top: 15%;
+  top: 2%;
   right: 5%;
   transform: translate(5%, 20%);
 }
@@ -98,12 +97,17 @@
 }
 
 main {
+  display: block;
   text-align: center;
   background: url("./image/header-mobile.svg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 10%;
+}
+
+main.nav-menu.active {
+  display: none;
 }
 
 .intro {
@@ -632,13 +636,14 @@ a:hover {
   .navbar {
     background: #fff;
     height: 2px;
-    display: flex;
   }
 
   .navbar__container {
-    display: flex;
     justify-content: space-between;
     margin: 0 25% auto;
+    display: flex;
+    height: 0%;
+    flex-direction: row;
   }
 
   #welcome {
@@ -650,14 +655,17 @@ a:hover {
   .nav-menu {
     display: inline-flex;
     position: absolute;
-    margin: 1% 160px;
+    margin-top: 1%;
+    margin-left: 10%;
   }
 
   .nav-menu.active {
     display: inline-flex;
     position: relative;
-    margin: 5% 10%;
-    background-color: white;
+    margin-top: 2%;
+    margin-left: -2px;
+    margin-right: 30%;
+    text-align: center;
   }
 
   .menu-toggle .bar {
