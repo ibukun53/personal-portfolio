@@ -5,19 +5,28 @@
 }
 
 .navbar {
-  background: #fff;
+  background: rgb(219, 219, 217);
   height: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 1.2rem;
 }
 
 .navbar__container {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin: 5px 0 auto;
+}
+
+.mobile-menu-bar {
+  display: block;
+}
+
+.nav-menu-wrapper {
+  height: 100%;
+  position: absolute;
+  display: block;
+  background-color: rgb(219, 219, 217);
+  width: 100%;
 }
 
 #welcome {
@@ -29,15 +38,19 @@
 .nav-menu {
   display: none;
   position: absolute;
-  margin: 45px 0;
+  height: 85%;
+  width: 100%;
+  background-color: rgb(255, 254, 254);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .nav-menu.active {
-  height: 11650%;
   position: absolute;
   display: block;
-  background-color: rgb(219, 219, 217);
+  height: 85%;
   width: 100%;
+  background-color: rgb(247, 246, 246);
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -74,14 +87,14 @@
 
 #mobile-menu {
   position: absolute;
-  top: 2%;
+  top: -1%;
   right: 5%;
   transform: translate(5%, 20%);
 }
 
 #mobile-menu.is-active {
-  position: fixed;
-  top: 1%;
+  position: absolute;
+  top: -1%;
 }
 
 #mobile-menu.is-active .bar:nth-child(2) {
@@ -634,38 +647,42 @@ a:hover {
 
 @media only screen and (min-width: 1100px) {
   .navbar {
-    background: #fff;
-    height: 2px;
+    background: green;
+    height: 0;
+    display: flex;
+    font-size: 1.2rem;
+    width: 40%;
   }
 
-  .navbar__container {
-    justify-content: space-between;
-    margin: 0 25% auto;
-    display: flex;
-    height: 0%;
-    flex-direction: row;
+  .mobile-menu-bar {
+    display: inline-block;
+  }
+
+  .nav-menu-wrapper {
+    height: 90%;
+    position: relative;
+    display: inline-block;
+    width: 0%;
   }
 
   #welcome {
     font-weight: bold;
-    margin: 6% 5%;
+    margin: 3% 5%;
     font-size: 15px;
+    display: none;
   }
 
   .nav-menu {
     display: inline-flex;
     position: absolute;
-    margin-top: 1%;
-    margin-left: 10%;
+    width: auto;
   }
 
   .nav-menu.active {
+    position: absolute;
     display: inline-flex;
-    position: relative;
-    margin-top: 2%;
-    margin-left: -2px;
-    margin-right: 30%;
-    text-align: center;
+    width: auto;
+    height: 0px;
   }
 
   .menu-toggle .bar {
@@ -679,7 +696,7 @@ a:hover {
   .nav-links {
     font-weight: bold;
     text-align: center;
-    padding: 15px;
+    width: 100%;
     font-size: 20px;
     color: #fff;
   }
@@ -687,14 +704,6 @@ a:hover {
   .nav-links:hover {
     color: #3b6645;
     transition: all 0.3s ease;
-  }
-
-  #mobile-menu {
-    display: none;
-  }
-
-  #mobile-menu.is-active {
-    display: none;
   }
 
   .works {
