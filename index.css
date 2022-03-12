@@ -4,17 +4,11 @@
   font-family: ubuntu, sans-serif;
 }
 
-.navbar {
+#navbar-container {
   background: rgb(219, 219, 217);
   height: 50px;
   display: flex;
   font-size: 1.2rem;
-}
-
-.navbar__container {
-  display: flex;
-  width: 100%;
-  margin: 5px 0 auto;
 }
 
 .mobile-menu-bar {
@@ -24,7 +18,7 @@
 .nav-menu-wrapper {
   height: 100%;
   position: absolute;
-  display: block;
+  display: flex;
   background-color: rgb(219, 219, 217);
   width: 100%;
 }
@@ -117,10 +111,6 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 10%;
-}
-
-main.nav-menu.active {
-  display: none;
 }
 
 .intro {
@@ -651,7 +641,7 @@ a:hover {
     height: 0;
     display: flex;
     font-size: 1.2rem;
-    width: 40%;
+    width: 30%;
   }
 
   .mobile-menu-bar {
