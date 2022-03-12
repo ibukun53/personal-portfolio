@@ -676,13 +676,14 @@ a:hover {
     display: inline-flex;
     position: absolute;
     width: auto;
+    height: 1px;
   }
 
   .nav-menu.active {
     position: absolute;
     display: inline-flex;
     width: auto;
-    height: 0px;
+    height: 1px;
   }
 
   .menu-toggle .bar {
