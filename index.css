@@ -18,9 +18,9 @@
 .nav-menu-wrapper {
   height: 100%;
   position: absolute;
-  display: flex;
   background-color: rgb(219, 219, 217);
   width: 100%;
+  display: none;
 }
 
 #welcome {
@@ -29,8 +29,12 @@
   font-size: 15px;
 }
 
+.nav-menu.nav-menu-wrapper.active {
+  position: absolute;
+}
+
 .nav-menu {
-  display: none;
+  display: block;
   position: absolute;
   height: 85%;
   width: 100%;
@@ -39,14 +43,13 @@
   border-bottom-left-radius: 25px;
 }
 
-.nav-menu.active {
+.nav-menu-wrapper.active {
   position: absolute;
   display: block;
-  height: 85%;
+  height: 100%;
   width: 100%;
-  background-color: rgb(247, 246, 246);
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  background-color: black;
+  
 }
 
 .menu-toggle .bar {
@@ -86,20 +89,21 @@
   transform: translate(5%, 20%);
 }
 
-#mobile-menu.is-active {
+.navbar-container.is-active {
   position: absolute;
   top: -1%;
+  width: 100%;
 }
 
-#mobile-menu.is-active .bar:nth-child(2) {
+.navbar-container.is-active .bar:nth-child(2) {
   opacity: 0;
 }
 
-#mobile-menu.is-active .bar:nth-child(1) {
+.navbar-container.is-active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-#mobile-menu.is-active .bar:nth-child(3) {
+.navbar-container.is-active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
