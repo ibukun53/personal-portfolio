@@ -4,7 +4,7 @@
   font-family: ubuntu, sans-serif;
 }
 
-#navbar-container {
+.navbar-container {
   background: rgb(219, 219, 217);
   height: 50px;
   display: flex;
@@ -106,7 +106,7 @@
 main {
   display: block;
   text-align: center;
-  background: url("./image/header-mobile.svg");
+  background: url('./image/header-mobile.svg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -364,7 +364,7 @@ ul {
 }
 
 .about {
-  background: url("./image/about me 2.svg");
+  background: url('./image/about me 2.svg');
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: 7%;
@@ -398,7 +398,7 @@ ul {
 }
 
 .about2 {
-  background: url("./image/about me 1.svg");
+  background: url('./image/about me 1.svg');
   background-repeat: no-repeat;
   background-position-x: left;
   background-size: 9%;
@@ -536,7 +536,7 @@ ul {
   margin: auto;
 }
 
-input[type=text] {
+input[type='text'] {
   width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -546,7 +546,7 @@ input[type=text] {
   margin-bottom: 12px;
 }
 
-input[type=email] {
+input[type='email'] {
   width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -567,7 +567,7 @@ textarea {
   margin-bottom: 12px;
 }
 
-input[type=submit] {
+input[type='submit'] {
   color: white;
   padding: 12px 20px;
   border: none;
@@ -580,7 +580,7 @@ input[type=submit] {
   margin: auto;
 }
 
-input[type=submit]:hover {
+input[type='submit']:hover {
   background-color: #45a049;
 }
 
@@ -739,7 +739,7 @@ a:hover {
 
   .desktop1 {
     position: relative;
-    background: url("./image/desktop1.svg");
+    background: url('./image/desktop1.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 22%;
@@ -749,7 +749,7 @@ a:hover {
   }
 
   .desktop2 {
-    background: url("./image/desktop2.svg");
+    background: url('./image/desktop2.svg');
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 10%;
@@ -759,7 +759,7 @@ a:hover {
   }
 
   .desktop3 {
-    background: url("./image/desktop3.svg");
+    background: url('./image/desktop3.svg');
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 9%;
@@ -799,7 +799,7 @@ a:hover {
     margin-bottom: 0%;
   }
 
-  input[type=submit] {
+  input[type='submit'] {
     float: left;
     margin-left: 40px;
   }
@@ -810,7 +810,7 @@ a:hover {
 
   main {
     text-align: center;
-    background: url("./image/header.svg");
+    background: url('./image/header.svg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
