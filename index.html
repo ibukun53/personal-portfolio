@@ -12,17 +12,27 @@
   </head>
   <body>
     <!-- Top Navigation Menu -->
-    <nav class="navbar margin-left-right-auto" id="portfolio">
-      <a class="welcome" href="#">Welcome</a>
-      <div class="button">
-        <div class="link"><a class="links" href="#portfolio">Portfolio</a></div>
-        <div class="link"><a class="links" href="#about">About</a></div>
-        <div class="link"><a class="links" href="#contact">Contact</a></div>
+
+    <nav class="navbar-container margin-left-right-auto">
+      <div class="mobile-menu-bar" id="portfolio">
+        <a id="welcome" href="#">Welcome</a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <div class="nav-menu-wrapper">
+        <ul class="nav-menu">
+          <li class="navbar-item"><a href="#home" class="nav-links">Portfolio</a></li>
+          <li class="navbar-item"><a href="#about" class="nav-links">About</a></li>
+          <li class="navbar-item"><a href="#contact" class="nav-links">Contact</a></li>
+        </ul>
       </div>
     </nav>
     <main>
       <section class="intro">
-        <h1 class="heading margin-left-right-auto">Hey there.I'm Blessing</h1>
+        <h1 id="home" class="heading margin-left-right-auto">Hey there.I'm Blessing</h1>
         <h2 class="subheading margin-left-right-auto">I'm a software developer</h2>
 
         <p class="summary margin-left-right-auto">
@@ -119,9 +129,9 @@
           </ul>
         </footer>
       </section>
-      <article class="recent">
+      <article class="recent" id="about">
         <img class="vector-img" src="./image/vector.svg" alt="vector" />
-        <h2 class="works-header" id="about">My Recent Works</h2>
+        <h2 class="works-header">My Recent Works</h2>
         <span class="line"></span>
         <article class="works">
           <div class="grid">
@@ -418,5 +428,6 @@
         </div>
       </footer>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

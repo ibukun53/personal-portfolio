@@ -4,41 +4,102 @@
   font-family: ubuntu, sans-serif;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  margin-top: 3%;
+.navbar-container {
+  height: 50px;
+  display: block;
+  font-size: 1.2rem;
+  background-color: rgb(255, 254, 254);
 }
 
-.welcome {
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-}
-
-.link {
-  position: relative;
-  height: 2px;
-  width: 20px;
-  background-color: black;
-  margin-bottom: 4px;
-  border-radius: 1px;
-  cursor: pointer;
-}
-
-.links {
+.nav-menu-wrapper {
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  top: 50px;
+  background-color: rgb(219, 219, 217);
+  width: 100%;
   display: none;
 }
 
-.button {
+#welcome {
+  font-weight: bold;
+  margin: 3% 5%;
+  font-size: 15px;
+}
+
+.nav-menu {
+  display: block;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  background-color: rgb(255, 254, 254);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background: #000;
   cursor: pointer;
+  display: block;
+}
+
+.navbar-item {
+  width: 100%;
+}
+
+.nav-links {
+  font-weight: bold;
+  text-align: left;
+  padding: 15px;
+  width: 80%;
+  right: 0%;
+  font-size: 20px;
+  display: table;
+  color: #fff;
+}
+
+.nav-links:hover {
+  color: #3b6645;
+  transition: all 0.3s ease;
+}
+
+#mobile-menu {
+  position: absolute;
+  top: -1%;
+  right: 5%;
+  transform: translate(5%, 20%);
+}
+
+.navbar-container.is-active {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-container.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-container.is-active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-container.is-active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-container.is-active .nav-menu-wrapper {
+  display: block;
 }
 
 main {
+  display: block;
   text-align: center;
-  background: url("./image/header-mobile.svg");
+  background: url('./image/header-mobile.svg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -296,7 +357,7 @@ ul {
 }
 
 .about {
-  background: url("./image/about me 2.svg");
+  background: url('./image/about me 2.svg');
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: 7%;
@@ -330,7 +391,7 @@ ul {
 }
 
 .about2 {
-  background: url("./image/about me 1.svg");
+  background: url('./image/about me 1.svg');
   background-repeat: no-repeat;
   background-position-x: left;
   background-size: 9%;
@@ -468,7 +529,7 @@ ul {
   margin: auto;
 }
 
-input[type=text] {
+input[type='text'] {
   width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -478,7 +539,7 @@ input[type=text] {
   margin-bottom: 12px;
 }
 
-input[type=email] {
+input[type='email'] {
   width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -499,7 +560,7 @@ textarea {
   margin-bottom: 12px;
 }
 
-input[type=submit] {
+input[type='submit'] {
   color: white;
   padding: 12px 20px;
   border: none;
@@ -512,7 +573,7 @@ input[type=submit] {
   margin: auto;
 }
 
-input[type=submit]:hover {
+input[type='submit']:hover {
   background-color: #45a049;
 }
 
@@ -568,39 +629,64 @@ a:hover {
 }
 
 @media only screen and (min-width: 1100px) {
-  .welcome {
+  .navbar.container {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .mobile-menu-bar {
     display: none;
+  }
+
+  .nav-menu-wrapper {
+    position: static;
+    display: inline-block;
+    width: 70%;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  #welcome {
     font-weight: bold;
-    color: black;
-    text-decoration: none;
+    margin: 3% 5%;
+    font-size: 15px;
+    display: none;
   }
 
-  .navbar {
-    width: 20%;
-    margin-top: 5px;
+  .nav-menu {
+    display: inline-flex;
+    position: absolute;
+    width: auto;
+    height: 1px;
   }
 
-  .link {
-    display: inline-block;
-    width: 70px;
-    cursor: pointer;
-    margin: auto;
+  .nav-menu.active {
+    position: absolute;
+    display: inline-flex;
+    width: auto;
+    height: 1px;
   }
 
-  .links {
-    display: inline-block;
-    position: relative;
-    height: 2px;
-    width: 120px;
-    background-color: white;
-    margin: auto;
-    border-radius: 1px;
-    cursor: pointer;
-    text-decoration: none;
+  .menu-toggle .bar {
+    display: none;
   }
 
-  .button {
-    cursor: pointer;
+  .navbar-item {
+    width: 100%;
+  }
+
+  .nav-links {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .nav-links:hover {
+    color: #3b6645;
+    transition: all 0.3s ease;
   }
 
   .works {
@@ -645,7 +731,7 @@ a:hover {
 
   .desktop1 {
     position: relative;
-    background: url("./image/desktop1.svg");
+    background: url('./image/desktop1.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 22%;
@@ -655,7 +741,7 @@ a:hover {
   }
 
   .desktop2 {
-    background: url("./image/desktop2.svg");
+    background: url('./image/desktop2.svg');
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 10%;
@@ -665,7 +751,7 @@ a:hover {
   }
 
   .desktop3 {
-    background: url("./image/desktop3.svg");
+    background: url('./image/desktop3.svg');
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: 9%;
@@ -705,7 +791,7 @@ a:hover {
     margin-bottom: 0%;
   }
 
-  input[type=submit] {
+  input[type='submit'] {
     float: left;
     margin-left: 40px;
   }
@@ -716,7 +802,7 @@ a:hover {
 
   main {
     text-align: center;
-    background: url("./image/header.svg");
+    background: url('./image/header.svg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
