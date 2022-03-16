@@ -1,5 +1,5 @@
 const menu = document.querySelector('.navbar-container');
-const menuLinks = document.querySelector('.nav-menu-wrapper');
+const menuLinks = document.querySelector('.nav-link');
 // Display mobile menu
 const navbarContainer = () => {
   menu.classList.toggle('is-active');
