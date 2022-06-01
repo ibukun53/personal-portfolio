@@ -428,7 +428,7 @@ ul {
 .flex-box {
   background-color: rgba(235, 240, 238, 1);
   border: 2px solid rgba(193, 199, 208, 1);
-  width: 62%;
+  width: 370px;
   height: 90%;
   border-radius: 10px;
   overflow: hidden;
@@ -706,7 +706,7 @@ a:hover {
 
   .flex-box {
     margin: -20% 3% 5%;
-    width: 23%;
+    width: 400px;
     margin-right: 0.4%;
   }
 
