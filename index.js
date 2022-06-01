@@ -27,7 +27,7 @@ function attriCards(data) {
         .join('');
     const languageLiElements = generalLiElements(this.languages);
     const div = document.createElement('div');
-    div.innerHTML = ` <section class="flex-container">
+    div.innerHTML = ` <div class="flex-container">
     <div class="flex-box">
     <p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" />
@@ -35,7 +35,7 @@ function attriCards(data) {
     <h3 class="attribute-title">${this.title}</h3>
     <ul class="attri-content">${languageLiElements}</ul>
   </div> 
-  </section>`;
+  </div>`;
     return div;
   };
 }
@@ -46,7 +46,7 @@ function attachToDom(detail) {
   div.appendChild(portfolio);
 }
 cards.forEach(attachToDom);
-
+//content card
 //navbar menu
 const menu = document.querySelector('.navbar-container');
 const menuLinks = document.querySelector('.nav-link');
