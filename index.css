@@ -428,7 +428,7 @@ ul {
 .flex-box {
   background-color: rgba(235, 240, 238, 1);
   border: 2px solid rgba(193, 199, 208, 1);
-  width: 370px;
+  width: 350px;
   height: 90%;
   border-radius: 10px;
   overflow: hidden;
@@ -489,7 +489,7 @@ ul {
   padding-left: 5%;
   float: left;
   letter-spacing: 0.01em;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 3%;
   margin-bottom: 7%;
 }
@@ -705,9 +705,8 @@ a:hover {
   }
 
   .flex-box {
-    margin: -20% 3% 5%;
+    margin: -20% 7% 5%;
     width: 400px;
-    margin-right: 0.4%;
   }
 
   .contact {

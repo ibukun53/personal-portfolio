@@ -1,7 +1,3 @@
-
-
-
- 
 const cards = [
   {
     image: './image/language.svg',
@@ -44,14 +40,17 @@ function attriCards(data) {
   };
 }
 
-const section = document.querySelector('.flex-container');
+const div = document.querySelector('.flex-container');
+
 function attachToDom(detail) {
   const portfolioCard = new attriCards(detail);
   const portfolio = portfolioCard.createElement();
-  section.appendChild(portfolio);
+  div.appendChild(portfolio);
 }
+
 cards.forEach(attachToDom);
-  
+
+//navabar
 const menu = document.querySelector('.navbar-container');
 const menuLinks = document.querySelector('.nav-link');
 // Display mobile menu
