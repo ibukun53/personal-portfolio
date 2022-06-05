@@ -1,22 +1,22 @@
-const cards = [
+const aboutMecards = [
   {
     image: './image/language.svg',
     title: 'Language',
-    languages: ['Javascript', 'Ruby', 'Html', 'Css'],
+    items: ['Javascript', 'Ruby', 'Html', 'Css'],
   },
   {
     image: './image/framework.svg',
     title: 'Framework',
-    languages: ['Bootstrap', 'Capybara', 'Selenium', 'Ruby', 'RSpec'],
+    items: ['Bootstrap', 'Capybara', 'Selenium', 'Ruby', 'RSpec'],
   },
   {
     image: './image/skill.svg',
     title: 'Skills',
-    languages: ['Codekit', 'Github', 'Codepen', 'Gitlab', 'Terminal'],
+    items: ['Codekit', 'Github', 'Codepen', 'Gitlab', 'Terminal'],
   },
 ];
 
-function attriCards(data) {
+function createAboutMecardElement(data) {
   this.image = data.image;
   this.title = data.title;
   this.languages = data.languages;
@@ -43,12 +43,12 @@ function attriCards(data) {
 const div = document.querySelector('.flex-container');
 
 function attachToDom(detail) {
-  const portfolioCard = new attriCards(detail);
+  const portfolioCard = new createAboutMecardElement(detail);
   const portfolio = portfolioCard.createElement();
   div.appendChild(portfolio);
 }
 
-cards.forEach(attachToDom);
+aboutMecards.forEach(attachToDom);
 
 //navabar
 const menu = document.querySelector('.navbar-container');
