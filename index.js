@@ -27,15 +27,15 @@ function attriCards(data) {
         .join('');
     const languageLiElements = generalLiElements(this.languages);
     const div = document.createElement('div');
-    div.innerHTML = ` <div class="flex-container">
-    <div class="flex-box">
+    div.innerHTML = ` <ul class="flex-container">
+    <li class="flex-box">
     <p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" />
     </p>
     <h3 class="attribute-title">${this.title}</h3>
     <ul class="attri-content">${languageLiElements}</ul>
-  </div> 
-  </div>`;
+  </li> 
+  </ul>`;
     return div;
   };
 }
