@@ -19,13 +19,13 @@ const aboutMecards = [
 function createAboutMecardElement(data) {
   this.image = data.image;
   this.title = data.title;
-  this.languages = data.languages;
+  this.items = data.items;
   this.createElement = function createElement() {
     const generalLiElements = (textContents) =>
       textContents
         .map((textContent) => `<li class="attribute-tags contrast">${textContent}</li>`)
         .join('');
-    const languageLiElements = generalLiElements(this.languages);
+    const languageLiElements = generalLiElements(this.items);
     const div = document.createElement('div');
     div.innerHTML = ` <ul class="flex-container">
     <li class="flex-box">
