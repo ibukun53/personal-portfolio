@@ -37,7 +37,7 @@ function createAboutMecardElement(data) {
   };
 }
  
-const ul = document.querySelector('.flex-container');
+const aboutMecardWrapperElement = document.querySelector('.flex-container');
 
 function attachToDom(detail) {
   const portfolioCard = new createAboutMecardElement(detail);
@@ -45,7 +45,7 @@ function attachToDom(detail) {
   ul.appendChild(portfolio);
 }
 
-aboutMecards.forEach(attachToDom);
+aboutMecardWrapperElement.forEach(attachToDom);
 
 //navabar
 const menu = document.querySelector('.navbar-container');
