@@ -27,7 +27,9 @@ function createAboutMecardElement(data) {
         .join('');
     const languageLiElements = generalLiElements(this.items);
     const div = document.createElement('div');
-    div.innerHTML = ` <ul class="flex-container">
+    const classes= div.classList;
+    classes.classList.add ("attribute-tags");
+    div.innerHTML`<ul class="flex-container">
     <li class="flex-box">
     <p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" />
