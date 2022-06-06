@@ -42,10 +42,10 @@ const aboutMecardWrapperElement = document.querySelector('.flex-container');
 function attachToDom(detail) {
   const portfolioCard = new createAboutMecardElement(detail);
   const portfolio = portfolioCard.createElement();
-  ul.appendChild(portfolio);
+  aboutMecardWrapperElement.appendChild(portfolio);
 }
 
-aboutMecardWrapperElement.forEach(attachToDom);
+aboutMecards.forEach(attachToDom);
 
 //navabar
 const menu = document.querySelector('.navbar-container');
