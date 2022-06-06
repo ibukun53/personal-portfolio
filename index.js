@@ -47,8 +47,6 @@ function attachToDom(detail) {
 
 aboutMecards.forEach(attachToDom);
 
-
-
 const recentWorkCards = [
   {
     image: './image/Screenshot.png',
@@ -109,7 +107,6 @@ function createRecentWorkElement(data) {
 }
 
 const recentWorkWrapperElement = document.querySelector('.works');
-
 function attachToDom(detail) {
   const portfolioCard = new createRecentWorkElement(detail);
   const portfolio = portfolioCard.createElement();
@@ -117,7 +114,6 @@ function attachToDom(detail) {
 }
 
 recentWorkCards.forEach(attachToDom);
-
 
 //navabar
 const menu = document.querySelector('.navbar-container');
