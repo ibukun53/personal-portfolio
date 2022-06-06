@@ -28,11 +28,11 @@ function createAboutMecardElement(data) {
     const languageLiElements = generalLiElements(this.items);
     const liElement = document.createElement('li');
     liElement.classList.add('flex-box');
-    liElement.innerHTML = `<p class="attribute-ellip">
+    liElement.innerHTML = `<article><p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" /> 
     </p>
     <h3 class="attribute-title">${this.title}</h3>
-    <ul class="attri-content">${languageLiElements}</ul>`;
+    <ul class="attri-content">${languageLiElements}</ul></article>`;
     return liElement;
   };
 }
@@ -57,3 +57,64 @@ const navbarContainer = () => {
 };
 menu.addEventListener('click', navbarContainer);
 menuLinks.addEventListener('click', navbarContainer);
+
+const recentWorkCards = [
+  {
+    image: './image/Screenshot.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+  },
+  {
+    image: './image/Screenshot.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+  },
+  {
+    image: './image/Screenshot.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+  },
+  {
+    image: './image/Screenshot.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+  },
+  {
+    image: './image/Screenshot.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+  },
+  {
+    image: './image/Screenshot.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+  },
+];
+
+function createRecentWorkElement(data) {
+  this.image = data.image;
+  this.title = data.title;
+  this.items = data.items;
+  this.createElement = function createElement() {
+    const generalLiElements = (textContents) =>
+      textContents
+        .map((textContent) => `<li class="attribute-tags contrast">${textContent}</li>`)
+        .join('');
+    const languageLiElements = generalLiElements(this.items);
+    const listOfRecentWorkElement = document.createElement('li');
+    listOfRecentWorkElement.classList.add('grid-item');
+    listOfRecentWorkElement.innerHTML = `<div class="card">
+        <img class="card-img" src="${this.image}" alt="page" />
+        <h3 class="card-header">${this.title}</h3>
+        <ul class="card-content margin-left-right-auto">${languageLiElements}</ul>
+        <div class="content-btn">
+          <a href="" aria-label="button">
+            <button-style class="see-projects">See Project </button-style>
+          </a>
+        </div>
+      </div>`;
+    return listOfRecentWorkElement;
+  };
+}
+
+const recentWorkWrapperElement = document.querySelector('.works');
