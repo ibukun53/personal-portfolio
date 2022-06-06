@@ -27,8 +27,8 @@ function createAboutMecardElement(data) {
         .join('');
     const languageLiElements = generalLiElements(this.items);
     const div = document.createElement('div');
-    const classes= element.classList;
-    classes.classList.add ("attribute-tags");
+    const classes = element.classList;
+    classes.classList.add('attribute-tags');
     div.innerHTML`<ul class="flex-container">
     <li class="flex-box">
     <p class="attribute-ellip">
