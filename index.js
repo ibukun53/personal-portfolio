@@ -28,11 +28,11 @@ function createAboutMecardElement(data) {
     const languageLiElements = generalLiElements(this.items);
     const liElement = document.createElement('li');
     liElement.classList.add('flex-box');
-    liElement.innerHTML`<p class="attribute-ellip">
+    liElement.innerHTML = `<p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" /> 
     </p>
     <h3 class="attribute-title">${this.title}</h3>
-    <ul class="attri-content">${languageLiElements}</ul> `;
+    <ul class="attri-content">${languageLiElements}</ul>`;
     return liElement;
   };
 }
