@@ -47,47 +47,38 @@ function attachToDom(detail) {
 
 aboutMecards.forEach(attachToDom);
 
-//navabar
-const menu = document.querySelector('.navbar-container');
-const menuLinks = document.querySelector('.nav-link');
-// Display mobile menu
-const navbarContainer = () => {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
-};
-menu.addEventListener('click', navbarContainer);
-menuLinks.addEventListener('click', navbarContainer);
+
 
 const recentWorkCards = [
   {
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
-    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+    items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
   },
   {
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
-    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+    items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
   },
   {
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
-    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+    items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
   },
   {
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
-    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+    items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
   },
   {
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
-    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+    items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
   },
   {
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
-    languages: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
+    items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
   },
 ];
 
@@ -118,3 +109,23 @@ function createRecentWorkElement(data) {
 }
 
 const recentWorkWrapperElement = document.querySelector('.works');
+
+function attachToDom(detail) {
+  const portfolioCard = new createRecentWorkElement(detail);
+  const portfolio = portfolioCard.createElement();
+  recentWorkWrapperElement.appendChild(portfolio);
+}
+
+recentWorkCards.forEach(attachToDom);
+
+
+//navabar
+const menu = document.querySelector('.navbar-container');
+const menuLinks = document.querySelector('.nav-link');
+// Display mobile menu
+const navbarContainer = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+};
+menu.addEventListener('click', navbarContainer);
+menuLinks.addEventListener('click', navbarContainer);
