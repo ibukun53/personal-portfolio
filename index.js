@@ -28,19 +28,15 @@ function createAboutMecardElement(data) {
     const languageLiElements = generalLiElements(this.items);
     const liElement = document.createElement('li');
     liElement.classList.add('flex-box');
-    ul.innerHTML`<ul class="flex-container">
-    <li class="flex-box">
-    <p class="attribute-ellip">
+    liElement.innerHTML` <p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" /> 
     </p>
     <h3 class="attribute-title">${this.title}</h3>
-    <ul class="attri-content">${languageLiElements}</ul>
-  </li> 
-  </ul>`;
-    return ul;
+    <ul class="attri-content">${languageLiElements}</ul> `;
+    return liElement;
   };
 }
-
+ 
 const ul = document.querySelector('.flex-container');
 
 function attachToDom(detail) {
