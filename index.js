@@ -27,12 +27,12 @@ function createAboutMecardElement(data) {
         .join('');
     const languageLiElements = generalLiElements(this.items);
     const div = document.createElement('div');
-    const classes= div.classList;
+    const classes= element.classList;
     classes.classList.add ("attribute-tags");
     div.innerHTML`<ul class="flex-container">
     <li class="flex-box">
     <p class="attribute-ellip">
-      <img class="attribute-img" src="${this.image}" alt="skill" />
+      <img class="attribute-img" src="${this.image}" alt="skill" /> 
     </p>
     <h3 class="attribute-title">${this.title}</h3>
     <ul class="attri-content">${languageLiElements}</ul>
@@ -42,12 +42,12 @@ function createAboutMecardElement(data) {
   };
 }
 
-const div = document.querySelector('.flex-container');
+const element = document.querySelector('.flex-container');
 
 function attachToDom(detail) {
   const portfolioCard = new createAboutMecardElement(detail);
   const portfolio = portfolioCard.createElement();
-  div.appendChild(portfolio);
+  element.appendChild(portfolio);
 }
 
 aboutMecards.forEach(attachToDom);
