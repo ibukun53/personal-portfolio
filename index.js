@@ -26,10 +26,9 @@ function createAboutMecardElement(data) {
         .map((textContent) => `<li class="attribute-tags contrast">${textContent}</li>`)
         .join('');
     const languageLiElements = generalLiElements(this.items);
-    const div = document.createElement('div');
-    const classes = element.classList;
-    classes.classList.add('attribute-tags');
-    div.innerHTML`<ul class="flex-container">
+    const liElement = document.createElement('li');
+    liElement.classList.add('flex-box');
+    ul.innerHTML`<ul class="flex-container">
     <li class="flex-box">
     <p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" /> 
@@ -38,16 +37,16 @@ function createAboutMecardElement(data) {
     <ul class="attri-content">${languageLiElements}</ul>
   </li> 
   </ul>`;
-    return div;
+    return ul;
   };
 }
 
-const element = document.querySelector('.flex-container');
+const ul = document.querySelector('.flex-container');
 
 function attachToDom(detail) {
   const portfolioCard = new createAboutMecardElement(detail);
   const portfolio = portfolioCard.createElement();
-  element.appendChild(portfolio);
+  ul.appendChild(portfolio);
 }
 
 aboutMecards.forEach(attachToDom);
