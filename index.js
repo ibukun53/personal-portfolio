@@ -39,13 +39,13 @@ function createAboutMecardElement(data) {
 
 const aboutMecardWrapperElement = document.querySelector('.flex-container');
 
-function attachToDom(detail) {
+function attachAboutMeDom(detail) {
   const portfolioCard = new createAboutMecardElement(detail);
   const portfolio = portfolioCard.createElement();
   aboutMecardWrapperElement.appendChild(portfolio);
 }
 
-aboutMecards.forEach(attachToDom);
+aboutMecards.forEach(attachAboutMeDom);
 
 const recentWorkCards = [
   {
@@ -87,7 +87,7 @@ function createRecentWorkElement(data) {
   this.createElement = function createElement() {
     const generalLiElements = (textContents) =>
       textContents
-        .map((textContent) => `<li class="attribute-tags contrast">${textContent}</li>`)
+        .map((textContent) => `<li class="content-tags contrast">${textContent}</li>`)
         .join('');
     const languageLiElements = generalLiElements(this.items);
     const listOfRecentWorkElement = document.createElement('li');
@@ -107,13 +107,13 @@ function createRecentWorkElement(data) {
 }
 
 const recentWorkWrapperElement = document.querySelector('.works');
-function attachToDom(detail) {
+function attachRecentWorkDom(detail) {
   const portfolioCard = new createRecentWorkElement(detail);
   const portfolio = portfolioCard.createElement();
   recentWorkWrapperElement.appendChild(portfolio);
 }
 
-recentWorkCards.forEach(attachToDom);
+recentWorkCards.forEach(attachRecentWorkDom);
 
 //navabar
 const menu = document.querySelector('.navbar-container');
