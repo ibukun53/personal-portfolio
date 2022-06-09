@@ -103,8 +103,10 @@ function createRecentWorkElements(data) {
         <ul class="card-content margin-left-right-auto">${languageLiElements}</ul>
         <div class="content-btn">
           <a href= ""aria-label="button">
-            <button-style onclick="openForm()" class="seeprojects">See Project
-            <span id="work-id">${this.id}</span></button-style>
+            <button-style onclick="function()" class="seeprojects">See Project</button-style>
+            <div class ="button-container">
+            <span id="work-id">${this.id}</span>
+            </div>
            </a>
         </div>
         </div>`;
@@ -122,12 +124,13 @@ recentWorkCards.forEach(attachRecentWorkDom);
 
 //popup
 const btn = document.querySelector('.seeprojects');
+const btnContainer = document.querySelector('.button-container');
 
 btn.addEventListener('click', function () {
-  btn.classList.toggle('show');
+  btnContainer.classList.toggle('show');
 });
 
-//navabar
+//navbar
 const menu = document.querySelector('.navbar-container');
 const menuLinks = document.querySelector('.nav-menu');
 // Display mobile menu
