@@ -332,13 +332,39 @@ ul {
   color: black;
 }
 
-.see-projects {
+.seeprojects {
   text-decoration: none;
   text-align: center;
   margin-top: 8px;
   border: 0;
   color: rgb(255, 255, 255);
   background: #36b37f;
+  position: relative;
+  opacity: 1;
+  display: inline-block;
+  transition: all  0.5s ease;
+}
+
+.seeprojects #work-id {
+  display: none;
+  position: absolute;
+  color: black;
+  width: 160px;
+  background-color: #555;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.seeprojects .show {
+  display: block;
+  transition: all  0.5s ease;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .content-btn {
@@ -349,6 +375,7 @@ ul {
   image-rendering: optimizeQuality;
   align-items: center;
   filter: contrast(150%);
+  transition: all  0.5s ease;
 }
 
 .btn {

@@ -22,7 +22,9 @@ function createAboutMecardElements(data) {
   this.items = data.items;
   this.createElement = function createElement() {
     const generalLiElements = (textContents) =>
-      textContents.map((textContent) => `<li class="attribute-tags contrast">${textContent}</li>`).join('');
+      textContents
+        .map((textContent) => `<li class="attribute-tags contrast">${textContent}</li>`)
+        .join('');
     const languageLiElements = generalLiElements(this.items);
     const liElements = document.createElement('li');
     liElements.classList.add('flex-box');
@@ -43,7 +45,6 @@ function attachAboutMeDom(detail) {
 }
 aboutMecards.forEach(attachAboutMeDom);
 
-
 const recentWorkCards = [
   {
     image: './image/Screenshot.png',
@@ -55,7 +56,7 @@ const recentWorkCards = [
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
-    id:  '2cc' ,
+    id: '2cc',
   },
   {
     image: './image/Screenshot.png',
@@ -73,7 +74,7 @@ const recentWorkCards = [
     image: './image/Screenshot.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
-    id:  '7ff',
+    id: '7ff',
   },
   {
     image: './image/Screenshot.png',
@@ -101,14 +102,14 @@ function createRecentWorkElements(data) {
         <h3 class="card-header">${this.title}</h3>
         <ul class="card-content margin-left-right-auto">${languageLiElements}</ul>
         <div class="content-btn">
-          <a href="" aria-label="button">
-            <button-style class="see-projects" ${this.id}>See Project </button-style>
-          </a>
+          <a href= ""aria-label="button">
+            <button-style onclick="openForm()" class="seeprojects">See Project
+            <span id="work-id">${this.id}</span></button-style>
+           </a>
         </div>
         </div>`;
     return listOfRecentWorksElements;
   };
-  console.log(`${this.id}`);
 }
 
 const recentWorkWrapperElement = document.querySelector('.works');
@@ -116,13 +117,19 @@ function attachRecentWorkDom(detail) {
   const portfolioCard = new createRecentWorkElements(detail);
   const portfolio = portfolioCard.createElement();
   recentWorkWrapperElement.appendChild(portfolio);
-};
+}
 recentWorkCards.forEach(attachRecentWorkDom);
 
+//popup
+const btn = document.querySelector('.seeprojects');
+
+btn.addEventListener('click', function () {
+  btn.classList.toggle('show');
+});
 
 //navabar
 const menu = document.querySelector('.navbar-container');
-const menuLinks = document.querySelector('.nav-link');
+const menuLinks = document.querySelector('.nav-menu');
 // Display mobile menu
 const navbarContainer = () => {
   menu.classList.toggle('is-active');
