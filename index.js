@@ -47,37 +47,37 @@ aboutMecards.forEach(attachAboutMeDom);
 
 const recentWorkCards = [
   {
-    image: './image/Screenshot.png',
+    image: './image/card1.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4aa',
   },
   {
-    image: './image/Screenshot.png',
+    image: './image/card2.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '2cc',
   },
   {
-    image: './image/Screenshot.png',
+    image: './image/card3.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4bb',
   },
   {
-    image: './image/Screenshot.png',
+    image: './image/card4.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '8hh',
   },
   {
-    image: './image/Screenshot.png',
+    image: './image/card5.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '7ff',
   },
   {
-    image: './image/Screenshot.png',
+    image: './image/card6.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '10aa',
@@ -102,13 +102,9 @@ function createRecentWorkElements(data) {
         <h3 class="card-header">${this.title}</h3>
         <ul class="card-content margin-left-right-auto">${languageLiElements}</ul>
         <div class="content-btn">
-          <a href= ""aria-label="button">
-            <button-style onclick="function()" class="seeprojects">See Project</button-style>
-            <div class ="button-container">
-            <span id="work-id">${this.id}</span>
-            </div>
-           </a>
-        </div>
+        <button class="seeprojects" onclick="myFunction()">See Project 
+        <span class= "id" id="workId">${this.id}</span> 
+        </button>
         </div>`;
     return listOfRecentWorksElements;
   };
@@ -123,13 +119,10 @@ function attachRecentWorkDom(detail) {
 recentWorkCards.forEach(attachRecentWorkDom);
 
 //popup
-const btn = document.querySelector('.seeprojects');
-const btnContainer = document.querySelector('.button-container');
-
-btn.addEventListener('click', function () {
-  btnContainer.classList.toggle('show');
-});
-
+function myFunction() {
+  const btn = document.getElementById('workId');
+  btn.classList.toggle('show');
+}
 //navbar
 const menu = document.querySelector('.navbar-container');
 const menuLinks = document.querySelector('.nav-menu');

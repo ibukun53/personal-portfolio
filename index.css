@@ -245,11 +245,11 @@ main {
 
 .works {
   background-color: rgba(255, 255, 255, 1);
-  display: grid;
-  row-gap: 50px;
-  grid-template-columns: auto auto auto;
-  margin-left: 5%;
-  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 95px 0;
 }
 
 .grid {
@@ -261,10 +261,12 @@ main {
 .grid-item {
   display: inline-block;
   background-color: rgba(255, 255, 255, 1);
-  border: 6px solid #e5e5e5;
+  border: 3px solid #e5e5e5;
   height: 100%;
-  margin: auto;
-  border-radius: 25px;
+  width: 370px;
+  margin-left: 20%;
+  margin-top: 3%;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   transition: 0.2s;
@@ -284,14 +286,14 @@ main {
 
 .card-img {
   display: block;
-  width: 100%;
-  height: 50%;
+  width: 500px;
+  height: 250px;
 }
 
 .card-header {
   display: block;
   font-size: 140%;
-  width: 100%;
+  width: 70%;
   height: 8%;
   font-weight: 600;
   color: rgb(58, 74, 66);
@@ -304,13 +306,12 @@ main {
 
 .card-content {
   display: flex;
-  width: 96%;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin-top: 10%;
+  margin: 25px 25px;
 }
 
 ul {
@@ -321,8 +322,8 @@ ul {
 
 .content-tags {
   border-radius: 4px;
-  margin-top: 12px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   background: rgba(235, 240, 238, 1);
   padding: 2%;
   font-size: 12px;
@@ -334,29 +335,23 @@ ul {
 
 .seeprojects {
   display: block;
+  position: relative;
+  cursor: pointer;
   text-decoration: none;
   text-align: center;
-  margin-top: 8px;
+  margin: auto;
   border: 0;
   color: rgb(255, 255, 255);
   background: #36b37f;
-  position: relative;
-  opacity: 1;
   transition: all  0.5s ease;
 }
 
-.button-container {
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
+.seeprojects.show {
+  visibility: visible;
 }
 
-.button-container.show {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-#work-id {
+.seeprojects .id {
+  visibility: hidden;
   position: absolute;
   color: black;
   width: 160px;
@@ -370,17 +365,21 @@ ul {
   margin-left: -80px;
 }
 
-#work-id.show {
-  display: block;
-  transition: all  0.5s ease;
-  cursor: pointer;
-  z-index: 1;
+.seeprojects .id::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 .content-btn {
   border-radius: 4px;
-  padding: 2%;
-  margin: 10% 30% 5%;
+  padding: 3%;
+  margin: 5% 35% 5%;
   background: #36b37f;
   image-rendering: optimizeQuality;
   align-items: center;
@@ -464,15 +463,16 @@ ul {
 .flex-box {
   background-color: rgba(235, 240, 238, 1);
   border: 2px solid rgba(193, 199, 208, 1);
-  width: 350px;
-  height: 90%;
+  width: 370px;
+  height: 100%;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 10% 2% 5%;
+  margin-left: 4%;
+  margin-top: 3%;
 }
 
 .attribute-ellip {
@@ -519,7 +519,7 @@ ul {
   background-color: rgb(255, 255, 255);
   border-radius: 0.3rem;
   height: 1.5rem;
-  width: 50px;
+  width: 20%;
   padding-top: 2%;
   padding-right: 4%;
   padding-bottom: 2%;
@@ -527,7 +527,7 @@ ul {
   float: left;
   letter-spacing: 0.01em;
   justify-content: space-around;
-  margin-left: 2%;
+  margin-left: 1%;
   margin-bottom: 7%;
 }
 
@@ -691,6 +691,15 @@ a:hover {
     display: none;
   }
 
+  .works {
+    background-color: rgba(255, 255, 255, 1);
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .nav-menu {
     display: inline-flex;
     position: absolute;
@@ -726,15 +735,55 @@ a:hover {
     transition: all 0.3s ease;
   }
 
-  .works {
-    height: auto;
-    width: 100%;
-    flex-wrap: nowrap;
+  .grid-item {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid #e5e5e5;
+    height: 100%;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s;
   }
 
-  .grid-item {
-    margin-left: 6%;
-    width: 60%;
+  .card-header {
+    width: 70%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 25px 25px;
+  }
+
+  .content-tags {
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background: rgba(235, 240, 238, 1);
+    padding: 2%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: black;
+  }
+
+  .content-btn {
+    border-radius: 4px;
+    padding: 3%;
+    margin: 0% 35%;
+    background: #36b37f;
+    image-rendering: optimizeQuality;
+    align-items: center;
+    filter: contrast(150%);
+    transition: all  0.5s ease;
   }
 
   .flex-container {
@@ -843,11 +892,6 @@ a:hover {
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 10%;
-  }
-
-  .content-tags {
-    text-align: left;
-    height: 1.5rem;
   }
 
   .about2 {
