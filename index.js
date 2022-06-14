@@ -101,11 +101,9 @@ function createRecentWorkElements(data) {
         <img class="card-img" src="${this.image}" alt="page" />
         <h3 class="card-header">${this.title}</h3>
         <ul class="card-content margin-left-right-auto">${languageLiElements}</ul>
-        <div class="content-btn">
-        <button class="seeprojects" onclick="myFunction()">See Project 
-        <span class= "id" id="workId">${this.id}</span> 
-        </button>
-        </div>`;
+        <div class="content-btn">  
+        <button type="button" class="seeprojects" id="${this.id}">See Project</button>
+        </div> `;
     return listOfRecentWorksElements;
   };
 }
@@ -118,11 +116,18 @@ function attachRecentWorkDom(detail) {
 }
 recentWorkCards.forEach(attachRecentWorkDom);
 
-//popup
-function myFunction() {
-  const btn = document.getElementById('workId');
-  btn.classList.toggle('show');
-}
+//btn
+const btns = document.querySelectorAll('.seeprojects');
+btns.forEach((btn) => {
+  btn.addEventListener('click', function (event) {
+    console.log(event.target.id);
+    function obj(card) {
+      return card.id === event.target.id;
+    }
+    console.log(recentWorkCards.find(obj));
+  });
+});
+
 //navbar
 const menu = document.querySelector('.navbar-container');
 const menuLinks = document.querySelector('.nav-menu');
