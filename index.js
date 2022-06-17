@@ -128,85 +128,13 @@ btns.forEach((btn) => {
   });
 });
 
-//popup-container
-const popUpCards = [
-  {
-    images: {
-      liveIcon: '.image/icon-Export.svg',
-      sourceIcon: '.image/icon-GitHub.svg ',
-      mobileimage: '.image/mobile-popup.svg',
-      desktopimage: '.image/popup.svg" ',
-    },
-    title: 'Keeping Track of hundreds of components',
-    items: {
-      desktopLanguage: ['CodeKit', 'Github', 'Bootstrap', 'Terminal', 'Javascript', 'Codepen'],
-      mobileLanguage: ['Javascript', 'Css', 'Html', 'Ruby'],
-    },
-    tags: {
-      name1: 'See Live',
-      name2: 'See Project',
-    },
-    description:
-      'Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard dummy text ever since the 500s ,when an unknown printer took agallery of type and sctambled it 1960s with the relea Lonem ipsium is simply dummy text othe printing and typeseting industry.Lonem ipsium is simply dummy text of the printing an typeseting industry. Lorem ipeum has been the industry standard dummy text ever since the',
-  },
-];
-
-function createPopUpElement(data) {
-  this.title = data.title;
-  this.image = data.image;
-  this.description = data.description;
-  this.items = data.items;
-  this.tags = data.tags;
-  this.createElement = function createElement() {
-    const generalLiElements = (textContents) =>
-      textContents
-        .map((textContent) => `<li class="attribute-tags contrast">${textContent}</li>`)
-        .join('');
-    const languageLiElements = generalLiElements(this.items);
-    const popUpElement = document.createElement('li');
-    popUpElement.classList.add('box-container');
-    popUpElement.innerHTML = `<img class="mobile-image" src="${this.image.mobileimage}" alt="beauty" />
-         <img class="image" src="${this.image.desktopimage}" alt="beauty" />
-         <div class="heading">
-           <h1 class="project-title">${this.title}</h1>
-           <div class="content-btn">
-             <a href="#top" aria-label="button">
-               <button-style class="See-Live"
-                 >${this.tags.name1}
-                 <img src="${this.image.liveIcon}"class="icon" alt="Icon - Export" />
-               </button-style>
-             </a>
-             <a href="#top" aria-label="button">
-               <button-style class="See-Source"
-                 >${this.tags.name2}
-                 <img src="${this.image.sourceIcon}" class="icon" alt="Icon -GitHub" /> </button-style
-             ></a>
-           </div>
-         </div>
-         <ul class="attri-content">${languageLiElements}</ul>
-         <p class="summary">${this.description}</p>
-         <div class="btn">
-           <a href="#top" aria-label="button">
-             <button-style id="live-btn" class="See-Live"
-               >${this.tags.name1}
-               <img src="${this.image.liveIcon}" class="icon" alt="Icon - Export" />
-             </button-style>
-           </a>
-           <a href="#top" aria-label="button">
-             <button-style id="source-btn" class="See-Source"
-               >${this.tags.name2}
-               <img src="${this.image.sourceIcon}" class="icon" alt="Icon -GitHub" /> </button-style
-           ></a>
-         </div>`;
-    return popUpElement;
-  };
-}
-
-const popUpWrapperElement = document.querySelector('.detail-container');
-
-function attachPopUpToDom(detail) {
-  const popUpCard = new createPopUpElement(detail);
-  const popUp = popUpCard.createElement();
-  popUpWrapperElement.appendChild(popUp);
-}
-attachPopUpToDom(popUpCards);
+//navabar
+const menu = document.querySelector('.navbar-container');
+const menuLinks = document.querySelector('.nav-link');
+// Display mobile menu
+const navbarContainer = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+};
+menu.addEventListener('click', navbarContainer);
+menuLinks.addEventListener('click', navbarContainer);
