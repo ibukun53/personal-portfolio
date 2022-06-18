@@ -138,3 +138,6 @@ const navbarContainer = () => {
 };
 menu.addEventListener('click', navbarContainer);
 menuLinks.addEventListener('click', navbarContainer);
+
+
+const detailContainer = document.querySelector('.navbar-container');
