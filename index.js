@@ -128,16 +128,11 @@ btns.forEach((btn) => {
   });
 });
 
-//navabar
-const menu = document.querySelector('.navbar-container');
-const menuLinks = document.querySelector('.nav-link');
-// Display mobile menu
-const navbarContainer = () => {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
+//Modal popup
+
+const modalContainer = document.querySelector('.modal-cancel-container');
+
+const modalCancel = () => {
+  modalContainer.classList.toggle('close');
 };
-menu.addEventListener('click', navbarContainer);
-menuLinks.addEventListener('click', navbarContainer);
-
-
-const detailContainer = document.querySelector('.navbar-container');
+modalContainer.addEventListener('click', modalCancel);
