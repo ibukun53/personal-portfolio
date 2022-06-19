@@ -127,12 +127,26 @@ btns.forEach((btn) => {
     console.log(recentWorkCards.find(obj));
   });
 });
+//*
+const btn = document.querySelector('.seeprojects');
+  const modal= document.querySelector('.modal-container');
+  const container = ()=>{
+    btn.classList.toggle('open');
+    modal.classList.toggle('remove')
+  }
+modal.addEventListener('click', container);
+btn.addEventListener('click', container);
+
+
 
 //Modal popup
+
 
 const modalContainer = document.querySelector('.modal-cancel-container');
 
 const modalCancel = () => {
   modalContainer.classList.toggle('close');
 };
+
 modalContainer.addEventListener('click', modalCancel);
+
