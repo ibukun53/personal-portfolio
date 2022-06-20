@@ -125,28 +125,13 @@ btns.forEach((btn) => {
       return card.id === event.target.id;
     }
     console.log(recentWorkCards.find(obj));
+    const popup = document.querySelector('.modal-container');
+    return popup.classList.remove('hidden');
   });
 });
 //*
-const btn = document.querySelector('.seeprojects');
-  const modal= document.querySelector('.modal-container');
-  const container = ()=>{
-    btn.classList.toggle('open');
-    modal.classList.toggle('remove')
-  }
-modal.addEventListener('click', container);
-btn.addEventListener('click', container);
-
-
-
-//Modal popup
-
-
-const modalContainer = document.querySelector('.modal-cancel-container');
-
+const cancelContainer = document.querySelector('.modal-cancel-container');
 const modalCancel = () => {
-  modalContainer.classList.toggle('close');
+  cancelContainer.classList.add('hidden');
 };
-
-modalContainer.addEventListener('click', modalCancel);
-
+cancelContainer.addEventListener('click', modalCancel);

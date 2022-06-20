@@ -647,14 +647,10 @@ a:hover {
   transition: all 0.1s ease;
 }
 
-.modal-container.remove {
-  display: block;
+.modal-container.hidden {
+  display: none;
 }
 
-.seeprojects.open {
-  display: block;
-}
-  
 .box-container {
   border-radius: 10px;
   background-color: #fff;
@@ -701,7 +697,7 @@ a:hover {
   display: none;
 }
 
-.modal-cancel-container.close {
+.modal-cancel-container.hidden {
   display: none;
 }
 
