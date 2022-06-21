@@ -100,8 +100,7 @@ function createRecentWorkElements(data) {
     listOfRecentWorksElements.innerHTML = `<div class="card">
         <img class="card-img" src="${this.image}" alt="page" />
         <h3 class="card-header">${this.title}</h3>
-        <ul class="card-content margin-left-right-auto">${languageLiElements}</ul>
-        <div class="content-btn">  
+        <ul class="card-content margin-left-right-auto">${languageLiElements}</ul> 
         <button type="button" class="seeprojects" id="${this.id}">See Project</button>
         </div> `;
     return listOfRecentWorksElements;
@@ -135,3 +134,14 @@ const modalCancel = () => {
   cancelContainer.classList.add('hidden');
 };
 cancelContainer.addEventListener('click', modalCancel);
+
+//navbar
+const menu = document.querySelector('.navbar-container');
+const menuLinks = document.querySelector('.nav-menu');
+// Display mobile menu
+const navbarContainer = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+};
+menu.addEventListener('click', navbarContainer);
+menuLinks.addEventListener('click', navbarContainer);
