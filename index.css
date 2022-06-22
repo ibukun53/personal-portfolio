@@ -664,7 +664,7 @@ a:hover {
 .modal-mobile-image {
   width: 90%;
   height: 400px;
-  margin-top: 13%;
+  margin-top: 8%;
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 5%;
@@ -708,7 +708,7 @@ a:hover {
 .modal-cancel-mobile-icon {
   display: block;
   position: absolute;
-  top: 14%;
+  top: 10%;
   right: 11%;
   cursor: pointer;
 }
@@ -720,6 +720,19 @@ a:hover {
   border-radius: 3px;
   filter: contrast(150%);
   display: block;
+}
+
+.modal-See-Source {
+  background: #36b37f;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 10px;
+  cursor: pointer;
 }
 
 .modal-See-Live {
@@ -735,25 +748,12 @@ a:hover {
   cursor: pointer;
 }
 
-.modal-See-Source {
-  background: #36b37f;
-  border-radius: 5px;
-  color: white;
-  padding: 11px 11px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 10px 10px;
-  cursor: pointer;
-}
-
 .modal-icon {
   margin-bottom: -5px;
   width: 15px;
 }
 
-.modal-attri-mobile-content {
+.modal-attri-desktop-content {
   display: flex;
   justify-content: left;
   flex-direction: row;
@@ -761,11 +761,11 @@ a:hover {
   list-style-type: none;
 }
 
-.modal-attri-desktop-content {
+.modal-attri-mobile-content {
   display: none;
 }
 
-.modal-mobile-tags {
+.modal-desktop-tags {
   background-color: #ebecf0;
   border-radius: 7px;
   color: #344563;
@@ -777,10 +777,6 @@ a:hover {
   margin-left: 5%;
   padding: 8px 12px;
   display: block;
-}
-
-.modal-desktop-tags {
-  display: none;
 }
 
 .modal-contrast {

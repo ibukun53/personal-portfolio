@@ -123,9 +123,19 @@ btns.forEach((btn) => {
     function obj(card) {
       return card.id === event.target.id;
     }
-    console.log(recentWorkCards.find(obj));
-    const popup = document.querySelector('.modal-container');
-    return popup.classList.remove('hidden');
+    const currentWork = recentWorkCards.find(obj);
+    const popUp = document.querySelector('.modal-container');
+    const popUpDescription = (popUp.querySelector('.modal-summary').textContent =
+      currentWork.description);
+    const popUpTitle = (popUp.querySelector('.modal-project-title').textContent =
+      currentWork.title);
+    const popUpImage = (popUp.querySelector('.modal-desktop-image').src = currentWork.image);
+    const popUpItems = (popUp.querySelector('.modal-desktop-tags').textContent = currentWork.items);
+    const popTags = (popUp.querySelector('.modal-See-Live').textContent = currentWork.tags);
+    const popbtn = (popUp.querySelector('.modal-See-Source').textContent = currentWork.btn);
+    const popIcons = (popUp.querySelector('.modal-icon').src = currentWork.icons);
+
+    return popUp.classList.remove('hidden');
   });
 });
 //*
