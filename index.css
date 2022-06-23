@@ -663,8 +663,8 @@ a:hover {
 
 .modal-desktop-image {
   width: 90%;
-  height: 450px;
-  margin-top: 11%;
+  height: 260px;
+  margin-top: 5%;
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 5%;
@@ -744,7 +744,12 @@ a:hover {
   cursor: pointer;
 }
 
-.modal-icon {
+.modal-icon-liveDemo {
+  margin-bottom: -5px;
+  width: 15px;
+}
+
+.modal-icon-github {
   margin-bottom: -5px;
   width: 15px;
 }
@@ -1109,8 +1114,8 @@ a:hover {
   .modal-desktop-image {
     display: block;
     width: 91%;
-    height: 410px;
-    margin-top: 8%;
+    height: 310px;
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 8%;
     border-radius: 5px;
@@ -1176,7 +1181,12 @@ a:hover {
     cursor: pointer;
   }
 
-  .modal-icon {
+  .modal-icon-liveDemo {
+    margin-bottom: -5px;
+    width: 15px;
+  }
+
+  .modal-icon-github {
     margin-bottom: -5px;
     width: 15px;
   }

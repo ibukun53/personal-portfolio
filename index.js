@@ -51,36 +51,60 @@ const recentWorkCards = [
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4aa',
+    description:
+      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+    github: 'https://github.com/ibukun53',
+    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card2.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '2cc',
+    description:
+      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+    github: 'https://github.com/ibukun53',
+    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card3.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4bb',
+    description:
+      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+    github: 'https://github.com/ibukun53',
+    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card4.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '8hh',
+    description:
+      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+    github: 'https://github.com/ibukun53',
+    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card5.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '7ff',
+    description:
+      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+    github: 'https://github.com/ibukun53',
+    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card6.png',
     title: 'Multi-Post Stories Gain+Glory',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '10aa',
+    description:
+      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+    github: 'https://github.com/ibukun53',
+    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
 ];
 
@@ -88,6 +112,9 @@ function createRecentWorkElements(data) {
   this.image = data.image;
   this.title = data.title;
   this.items = data.items;
+  this.description = data.description;
+  this.github = data.github;
+  this.liveDemo = data.liveDemo;
   this.id = data.id;
   this.createElement = function createElement() {
     const generalLiElements = (textContents) =>
@@ -130,19 +157,19 @@ btns.forEach((btn) => {
     const popUpTitle = (popUp.querySelector('.modal-project-title').innerTEXT = currentWork.title);
     const popUpImage = (popUp.querySelector('.modal-desktop-image').src = currentWork.image);
     const popUpItems = (popUp.querySelector('.modal-desktop-tags').innerTEXT = currentWork.items);
-    const popTags = (popUp.querySelector('.modal-See-Live').innerTEXT = currentWork.tags);
-    const popbtn = (popUp.querySelector('.modal-See-Source').innerTEXT = currentWork.btn);
-    const popIcons = (popUp.querySelector('.modal-icon').innerTEXT = currentWork.icons);
-
+    const popBtn = (popUp.querySelector('.modal-icon-liveDemo').innerTEXT = currentWork.liveDemo);
+    const popbtn = (popUp.querySelector('.modal-icon-github').innerTEXT = currentWork.github);
     return popUp.classList.remove('hidden');
   });
 });
 //*
-const cancelContainer = document.querySelector('.modal-cancel-container');
+
+const cancelBtn = document.querySelector('.modal-cancel-container');
 const modalCancel = () => {
-  cancelContainer.classList.add('hidden');
+  const modalContainer = document.querySelector('.modal-container');
+  modalContainer.classList.add('hidden');
 };
-cancelContainer.addEventListener('click', modalCancel);
+cancelBtn.addEventListener('click', modalCancel);
 
 //navbar
 const menu = document.querySelector('.navbar-container');
