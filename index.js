@@ -48,63 +48,63 @@ aboutMecards.forEach(attachAboutMeDom);
 const recentWorkCards = [
   {
     image: './image/card1.png',
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Sporting ultimate website',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4aa',
     description:
-      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+      'Ultimate sport website takes  all about there special sporting activities',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card2.png',
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Product-Landing Portfolio',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '2cc',
     description:
-      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+      'Product landing is a simple and unique website to brand an existing product ',
     github: 'https://github.com/ibukun53',
-    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
+    liveDemo: 'https://web.facebook.com/debby.blessing.1460',
   },
   {
     image: './image/card3.png',
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Simple Nourish Website',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4bb',
     description:
-      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+      ' This ia a website that opens our eye to the food types in our location',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card4.png',
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Product-Landing Portfolio',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '8hh',
     description:
-      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+      'A product landing portfolio emphasics basically on  a brand project ',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card5.png',
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Parasite-Documentation Portfolio',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '7ff',
     description:
-      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+      'A parasite documentation portfolio emphasics basically on insect,pest studies ',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card6.png',
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Technical-Documentation Portfolio',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '10aa',
     description:
-      ' Lonem ipsium is simply dummy text of the printing and typeseting industry. Lorem ipeum ha been the industry standard du mmy text ever since the 500s ,when an unknown lorewm',
+      ' A technical portfolio website is certain to show documented of educational and tecnical topics. ',
     github: 'https://github.com/ibukun53',
-    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
+    liveDemo: 'file:///C:/projects/techincal-documentation-page/index.html',
   },
 ];
 
@@ -112,9 +112,6 @@ function createRecentWorkElements(data) {
   this.image = data.image;
   this.title = data.title;
   this.items = data.items;
-  this.description = data.description;
-  this.github = data.github;
-  this.liveDemo = data.liveDemo;
   this.id = data.id;
   this.createElement = function createElement() {
     const generalLiElements = (textContents) =>
@@ -152,13 +149,12 @@ btns.forEach((btn) => {
     }
     const currentWork = recentWorkCards.find(obj);
     const popUp = document.querySelector('.modal-container');
-    const popUpDescription = (popUp.querySelector('.modal-summary').innerTEXT =
-      currentWork.description);
-    const popUpTitle = (popUp.querySelector('.modal-project-title').innerTEXT = currentWork.title);
-    const popUpImage = (popUp.querySelector('.modal-desktop-image').src = currentWork.image);
-    const popUpItems = (popUp.querySelector('.modal-desktop-tags').innerTEXT = currentWork.items);
-    const popBtn = (popUp.querySelector('.modal-icon-liveDemo').innerTEXT = currentWork.liveDemo);
-    const popbtn = (popUp.querySelector('.modal-icon-github').innerTEXT = currentWork.github);
+    const popUpDescription = popUp.querySelector('.modal-summary').textContent = currentWork.description;
+    const popUpTitle = popUp.querySelector('.modal-project-title').textContent = currentWork.title;
+    const popUpImage = popUp.querySelector('.modal-desktop-image').src = currentWork.image;
+    const popUpItems = popUp.querySelector('.modal-desktop-tags').textContent = currentWork.items;
+    const popBtn = popUp.querySelector('.modal-See-Live').href = currentWork.liveDemo;
+    const popbtn = popUp.querySelector('.modal-See-Source').href = currentWork.github;
     return popUp.classList.remove('hidden');
   });
 });
@@ -167,7 +163,7 @@ btns.forEach((btn) => {
 const cancelBtn = document.querySelector('.modal-cancel-container');
 const modalCancel = () => {
   const modalContainer = document.querySelector('.modal-container');
-  modalContainer.classList.add('hidden');
+   modalContainer.classList.add('hidden');
 };
 cancelBtn.addEventListener('click', modalCancel);
 
