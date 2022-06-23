@@ -661,18 +661,14 @@ a:hover {
   transition: all 0.1s ease;
 }
 
-.modal-mobile-image {
+.modal-desktop-image {
   width: 90%;
-  height: 400px;
-  margin-top: 8%;
+  height: 450px;
+  margin-top: 11%;
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 5%;
   border-radius: 5%;
-}
-
-.modal-desktop-image {
-  display: none;
 }
 
 .modal-project-title {
@@ -1113,10 +1109,10 @@ a:hover {
   .modal-desktop-image {
     display: block;
     width: 91%;
-    height: 450px;
-    margin-top: 7%;
+    height: 410px;
+    margin-top: 8%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 8%;
     border-radius: 5px;
   }
 

@@ -125,15 +125,14 @@ btns.forEach((btn) => {
     }
     const currentWork = recentWorkCards.find(obj);
     const popUp = document.querySelector('.modal-container');
-    const popUpDescription = (popUp.querySelector('.modal-summary').textContent =
+    const popUpDescription = (popUp.querySelector('.modal-summary').innerTEXT =
       currentWork.description);
-    const popUpTitle = (popUp.querySelector('.modal-project-title').textContent =
-      currentWork.title);
+    const popUpTitle = (popUp.querySelector('.modal-project-title').innerTEXT = currentWork.title);
     const popUpImage = (popUp.querySelector('.modal-desktop-image').src = currentWork.image);
-    const popUpItems = (popUp.querySelector('.modal-desktop-tags').textContent = currentWork.items);
-    const popTags = (popUp.querySelector('.modal-See-Live').textContent = currentWork.tags);
-    const popbtn = (popUp.querySelector('.modal-See-Source').textContent = currentWork.btn);
-    const popIcons = (popUp.querySelector('.modal-icon').src = currentWork.icons);
+    const popUpItems = (popUp.querySelector('.modal-desktop-tags').innerTEXT = currentWork.items);
+    const popTags = (popUp.querySelector('.modal-See-Live').innerTEXT = currentWork.tags);
+    const popbtn = (popUp.querySelector('.modal-See-Source').innerTEXT = currentWork.btn);
+    const popIcons = (popUp.querySelector('.modal-icon').innerTEXT = currentWork.icons);
 
     return popUp.classList.remove('hidden');
   });
