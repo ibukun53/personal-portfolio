@@ -657,6 +657,7 @@ a:hover {
 
 .box-container {
   border-radius: 10px;
+  height: 1000px;
   background-color: #fff;
   transition: all 0.1s ease;
 }
@@ -678,8 +679,8 @@ a:hover {
   line-height: 35px;
   height: 82px;
   font-weight: 700;
-  font-size: 32px;
-  width: 60%;
+  font-size: 30px;
+  width: 100%;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -718,7 +719,7 @@ a:hover {
   display: block;
 }
 
-.modal-See-Source {
+.modal-See-Source-btm {
   background: #36b37f;
   border-radius: 5px;
   color: white;
@@ -731,7 +732,7 @@ a:hover {
   cursor: pointer;
 }
 
-.modal-See-Live {
+.modal-See-Live-btm {
   background: #36b37f;
   border-radius: 5px;
   color: white;
@@ -773,7 +774,8 @@ a:hover {
   text-align: center;
   text-decoration: none;
   font-size: 12px;
-  margin: 10px 12px;
+  margin-bottom: 10px;
+  margin-top: -35px;
   cursor: pointer;
   margin-left: 5%;
   padding: 8px 12px;
@@ -786,7 +788,7 @@ a:hover {
 
 .modal-summary {
   margin: auto;
-  width: 100%;
+  width: 90%;
   line-height: 30px;
   font-size: 20px;
   color: #344563;
@@ -885,11 +887,10 @@ a:hover {
     display: inline-block;
     background-color: rgba(255, 255, 255, 1);
     border: 3px solid #e5e5e5;
-    height: 100%;
+    height: 95%;
     width: 300px;
     gap: 5%;
     margin: auto;
-    margin-top: 3%;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -934,7 +935,7 @@ a:hover {
     background: #36b37f;
     border-radius: 4px;
     padding: 3%;
-    margin: 3% 35%;
+    margin: -20px 35%;
     margin-bottom: 1%;
     align-items: center;
     filter: contrast(150%);
@@ -1105,6 +1106,7 @@ a:hover {
   .box-container {
     background-color: #fff;
     border-radius: 10px;
+    height: 1000%;
   }
 
   .modal-mobile-image {
@@ -1123,6 +1125,7 @@ a:hover {
 
   .modal-heading {
     display: flex;
+    margin-top: -10px;
   }
 
   .modal-project-title {
@@ -1132,7 +1135,7 @@ a:hover {
     height: 82px;
     font-weight: 700;
     font-size: 32px;
-    margin-top: 5px;
+    margin-top: 1px;
     text-align: left;
     width: 45%;
   }
@@ -1155,7 +1158,7 @@ a:hover {
     display: none;
   }
 
-  .modal-See-Live {
+  .modal-See-Live-Top {
     background: #36b37f;
     border-radius: 5px;
     color: white;
@@ -1168,7 +1171,7 @@ a:hover {
     cursor: pointer;
   }
 
-  .modal-See-Source {
+  .modal-See-Source-Top {
     background: #36b37f;
     border-radius: 5px;
     color: white;
@@ -1206,7 +1209,8 @@ a:hover {
     text-align: center;
     text-decoration: none;
     font-size: 12px;
-    margin: 10px 12px;
+    margin-bottom: 10px;
+    margin-top: -15px;
     cursor: pointer;
     margin-left: 5%;
     padding: 8px 12px;

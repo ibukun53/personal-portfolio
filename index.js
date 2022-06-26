@@ -48,23 +48,23 @@ aboutMecards.forEach(attachAboutMeDom);
 const recentWorkCards = [
   {
     image: './image/card1.png',
-    title: 'Sporting ultimate website',
+    title: 'Sporting Ultimate Website',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4aa',
     description:
-      'Ultimate sport website takes  all about there special sporting activities',
+      'Ultimate sport website accomplish a number of things.The update of upcoming events in all activities on the latest news.The web page is easy to navigate and are esay to digestion of information with the multimedia section are solidand flexible.',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
   },
   {
     image: './image/card2.png',
-    title: 'Product-Landing Portfolio',
+    title: 'Product-Landing Page',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '2cc',
     description:
-      'Product landing is a simple and unique website to brand an existing product ',
+      'Product landing page is a webpage designed specifically to promote or sell products or persuade visitors to convert to a product -related offer.',
     github: 'https://github.com/ibukun53',
-    liveDemo: 'https://web.facebook.com/debby.blessing.1460',
+    liveDemo: 'https://codepen.io/debbyblessing/full/ZEBpENL',
   },
   {
     image: './image/card3.png',
@@ -72,29 +72,29 @@ const recentWorkCards = [
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '4bb',
     description:
-      ' This ia a website that opens our eye to the food types in our location',
-    github: 'https://github.com/ibukun53',
-    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
+      ' Simple Norish website ia a web that describes a healthy food products.They offer a variety of Food product, the site easy to navigate.The overall design is modern and stylish opens our eye to the food types in our location',
+    github: 'https://github.com/ibukun53/simple-nourish-website',
+    liveDemo: 'https://simple-nourish.netlify.app/',
   },
   {
     image: './image/card4.png',
-    title: 'Product-Landing Portfolio',
+    title: 'Web Questionaire Form ',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '8hh',
     description:
-      'A product landing portfolio emphasics basically on  a brand project ',
+      'Questionaire form  webs allows collecting instant feedback, evaluation and suggestions from users about your products and services',
     github: 'https://github.com/ibukun53',
-    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
+    liveDemo: 'https://codepen.io/debbyblessing/full/GRNqLER',
   },
   {
     image: './image/card5.png',
-    title: 'Parasite-Documentation Portfolio',
+    title: 'Larval Archives Website',
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '7ff',
     description:
-      'A parasite documentation portfolio emphasics basically on insect,pest studies ',
+      'This is a web about butterflies all around the world,presenting you with beautiful images of the world without humans',
     github: 'https://github.com/ibukun53',
-    liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
+    liveDemo: 'https://codepen.io/debbyblessing/full/OJbXMGm',
   },
   {
     image: './image/card6.png',
@@ -102,9 +102,9 @@ const recentWorkCards = [
     items: ['Javascript', 'Ruby on rails', 'Html', 'Css'],
     id: '10aa',
     description:
-      ' A technical portfolio website is certain to show documented of educational and tecnical topics. ',
+      'Technical documentation is a web that guides and describe how a product or services works,It is a more focused created to describe to use,functionality or architecture of a product, system or service  ',
     github: 'https://github.com/ibukun53',
-    liveDemo: 'file:///C:/projects/techincal-documentation-page/index.html',
+    liveDemo: 'https://codepen.io/debbyblessing/full/zYowgzx',
   },
 ];
 
@@ -149,12 +149,22 @@ btns.forEach((btn) => {
     }
     const currentWork = recentWorkCards.find(obj);
     const popUp = document.querySelector('.modal-container');
-    const popUpDescription = popUp.querySelector('.modal-summary').textContent = currentWork.description;
-    const popUpTitle = popUp.querySelector('.modal-project-title').textContent = currentWork.title;
-    const popUpImage = popUp.querySelector('.modal-desktop-image').src = currentWork.image;
-    const popUpItems = popUp.querySelector('.modal-desktop-tags').textContent = currentWork.items;
-    const popBtn = popUp.querySelector('.modal-See-Live').href = currentWork.liveDemo;
-    const popbtn = popUp.querySelector('.modal-See-Source').href = currentWork.github;
+    const popUpDescription = (popUp.querySelector('.modal-summary').textContent =
+      currentWork.description);
+    const popUpTitle = (popUp.querySelector('.modal-project-title').textContent =
+      currentWork.title);
+    const popUpImage = (popUp.querySelector('.modal-desktop-image').src = currentWork.image);
+    const generalLiElements = (innerHTMLs) =>
+      innerHTMLs
+        .map((innerHTML) => `<li class="modal-desktop-tags contrast">${innerHTML}</li>`)
+        .join('');
+    const languageLiElements = generalLiElements(currentWork.items);
+    const popUpItems = (popUp.querySelector('.modal-attri-desktop-content').innerHTML =
+      languageLiElements);
+    const popBtnTop = (popUp.querySelector('.modal-See-Live-Top').href = currentWork.liveDemo);
+    const popbtnTop = (popUp.querySelector('.modal-See-Source-Top').href = currentWork.github);
+    const popBtnBtm = (popUp.querySelector('.modal-See-Live-btm').href = currentWork.liveDemo);
+    const popbtnBtm = (popUp.querySelector('.modal-See-Source-btm').href = currentWork.github);
     return popUp.classList.remove('hidden');
   });
 });
@@ -163,7 +173,7 @@ btns.forEach((btn) => {
 const cancelBtn = document.querySelector('.modal-cancel-container');
 const modalCancel = () => {
   const modalContainer = document.querySelector('.modal-container');
-   modalContainer.classList.add('hidden');
+  modalContainer.classList.add('hidden');
 };
 cancelBtn.addEventListener('click', modalCancel);
 
