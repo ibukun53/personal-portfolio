@@ -55,6 +55,8 @@ const recentWorkCards = [
       'Ultimate sport website accomplish a number of things.The update of upcoming events in all activities on the latest news.The web page is easy to navigate and are esay to digestion of information with the multimedia section are solidand flexible.',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://deploy-preview-9--uni-uni.netlify.app',
+    next: 5,
+    previous: 5,
   },
   {
     image: './image/card2.png',
@@ -65,6 +67,8 @@ const recentWorkCards = [
       'Product landing page is a webpage designed specifically to promote or sell products or persuade visitors to convert to a product -related offer.',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://codepen.io/debbyblessing/full/ZEBpENL',
+    next: 4,
+    previous: 4,
   },
   {
     image: './image/card3.png',
@@ -75,6 +79,8 @@ const recentWorkCards = [
       ' Simple Norish website ia a web that describes a healthy food products.They offer a variety of Food product, the site easy to navigate.The overall design is modern and stylish opens our eye to the food types in our location',
     github: 'https://github.com/ibukun53/simple-nourish-website',
     liveDemo: 'https://simple-nourish.netlify.app/',
+    next: 3,
+    previous: 3,
   },
   {
     image: './image/card4.png',
@@ -85,6 +91,8 @@ const recentWorkCards = [
       'Questionaire form  webs allows collecting instant feedback, evaluation and suggestions from users about your products and services',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://codepen.io/debbyblessing/full/GRNqLER',
+    next: 2,
+    previous: 2,
   },
   {
     image: './image/card5.png',
@@ -95,6 +103,8 @@ const recentWorkCards = [
       'This is a web about butterflies all around the world,presenting you with beautiful images of the world without humans',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://codepen.io/debbyblessing/full/OJbXMGm',
+    next: 1,
+    previous: 1,
   },
   {
     image: './image/card6.png',
@@ -105,6 +115,8 @@ const recentWorkCards = [
       'Technical documentation is a web that guides and describe how a product or services works,It is a more focused created to describe to use,functionality or architecture of a product, system or service  ',
     github: 'https://github.com/ibukun53',
     liveDemo: 'https://codepen.io/debbyblessing/full/zYowgzx',
+    next: 0,
+    previous: 0,
   },
 ];
 
@@ -144,16 +156,16 @@ const btns = document.querySelectorAll('.seeprojects');
 btns.forEach((btn) => {
   btn.addEventListener('click', function (event) {
     console.log(event.target.id);
-    function obj(card) {
+   const obj= (card) => {
       return card.id === event.target.id;
     }
     const currentWork = recentWorkCards.find(obj);
     const popUp = document.querySelector('.modal-container');
-    const popUpDescription = (popUp.querySelector('.modal-summary').textContent =
-      currentWork.description);
-    const popUpTitle = (popUp.querySelector('.modal-project-title').textContent =
-      currentWork.title);
-    const popUpImage = (popUp.querySelector('.modal-desktop-image').src = currentWork.image);
+    const popUpDescription = popUp.querySelector('.modal-summary').textContent =
+      currentWork.description;
+    const popUpTitle = popUp.querySelector('.modal-project-title').textContent =
+      currentWork.title;
+    const popUpImage = popUp.querySelector('.modal-desktop-image').src = currentWork.image;
     const generalLiElements = (innerHTMLs) =>
       innerHTMLs
         .map((innerHTML) => `<li class="modal-desktop-tags contrast">${innerHTML}</li>`)
@@ -169,6 +181,24 @@ btns.forEach((btn) => {
   });
 });
 //*
+const showProject = () => {
+const popupContent = document.querySelector('.modal-container');
+popupContent.textContent = recentWorkCards[recentWorkCardsIndex];
+}
+
+const recentWorkCardsIndex = 0;
+const nextProject = document.querySelector('.modal-content-next-button');
+const previousProject = document.querySelector('.modal-content-previous-button');
+nextProject.addEventListener('click', () => {
+  recentWorkCardsIndex++; 
+  showProject;
+});
+
+previousProject.addEventListener('click', () => {
+  recentWorkCardsIndex--; 
+  showProject;
+});
+
 
 const cancelBtn = document.querySelector('.modal-cancel-container');
 const modalCancel = () => {
@@ -187,3 +217,5 @@ const navbarContainer = () => {
 };
 menu.addEventListener('click', navbarContainer);
 menuLinks.addEventListener('click', navbarContainer);
+
+showProject();

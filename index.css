@@ -712,7 +712,7 @@ a:hover {
 
 .modal-content-btn-btm {
   text-align: center;
-  margin: 15px;
+  margin: 2px;
   padding: 1%;
   border-radius: 3px;
   filter: contrast(150%);
@@ -755,6 +755,20 @@ a:hover {
   width: 15px;
 }
 
+.modal-content-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-content-next-button {
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+.modal-content-previous-button {
+  margin-left: 50%;
+  cursor: pointer;
+}
 .modal-attri-desktop-content {
   display: flex;
   justify-content: left;
