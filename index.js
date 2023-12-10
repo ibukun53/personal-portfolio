@@ -153,6 +153,18 @@ recentWorkCards.forEach(attachRecentWorkDom);
 
 //btn
 const btns = document.querySelectorAll('.seeprojects');
+const popUp = document.querySelector('.modal-container');
+const popUpDescription = popUp.querySelector('.modal-summary');
+const popUpTitle = popUp.querySelector('.modal-project-title');
+const popUpImage = popUp.querySelector('.modal-desktop-image');
+const popUpItems = popUp.querySelector('.modal-attri-desktop-content');
+const popBtnTop = popUp.querySelector('.modal-See-Live-Top');
+const popbtnTop = popUp.querySelector('.modal-See-Source-Top');
+const popBtnBtm = popUp.querySelector('.modal-See-Live-btm');
+const popbtnBtm = popUp.querySelector('.modal-See-Source-btm');
+const nextProject = document.querySelector('.modal-content-next-button');
+const previousProject = document.querySelector('.modal-content-previous-button');
+
 btns.forEach((btn) => {
   btn.addEventListener('click', function (event) {
     console.log(event.target.id);
@@ -160,46 +172,60 @@ btns.forEach((btn) => {
       return card.id === event.target.id;
     }
     const currentWork = recentWorkCards.find(obj);
-    const popUp = document.querySelector('.modal-container');
-    const popUpDescription = popUp.querySelector('.modal-summary').textContent =
-      currentWork.description;
-    const popUpTitle = popUp.querySelector('.modal-project-title').textContent =
-      currentWork.title;
-    const popUpImage = popUp.querySelector('.modal-desktop-image').src = currentWork.image;
+    popUpDescription.textContent = currentWork.description;
+     popUpTitle.textContent = currentWork.title;
+    popUpImage.src = currentWork.image;
     const generalLiElements = (innerHTMLs) =>
       innerHTMLs
         .map((innerHTML) => `<li class="modal-desktop-tags contrast">${innerHTML}</li>`)
         .join('');
     const languageLiElements = generalLiElements(currentWork.items);
-    const popUpItems = (popUp.querySelector('.modal-attri-desktop-content').innerHTML =
-      languageLiElements);
-    const popBtnTop = (popUp.querySelector('.modal-See-Live-Top').href = currentWork.liveDemo);
-    const popbtnTop = (popUp.querySelector('.modal-See-Source-Top').href = currentWork.github);
-    const popBtnBtm = (popUp.querySelector('.modal-See-Live-btm').href = currentWork.liveDemo);
-    const popbtnBtm = (popUp.querySelector('.modal-See-Source-btm').href = currentWork.github);
+    popUpItems.innerHTML = languageLiElements;
+    popBtnTop.href = currentWork.liveDemo;
+    popbtnTop.href = currentWork.github;
+    popBtnBtm.href = currentWork.liveDemo;
+    popbtnBtm.href = currentWork.github;
     return popUp.classList.remove('hidden');
   });
 });
 //*
+
+let recentWorkCardsIndex = 0;
 const showProject = () => {
-const popupContent = document.querySelector('.modal-container');
-popupContent.textContent = recentWorkCards[recentWorkCardsIndex];
+  const popupContent = document.querySelector('#modal-container');
+  const currentProject = recentWorkCards[recentWorkCardsIndex];
+  popUpDescription.textContent = currentProject.description;
+  popUpTitle.textContent = currentProject.title;
+ popUpImage.src = currentProject.image;
+ const generalLiElements = (innerHTMLs) =>
+   innerHTMLs
+     .map((innerHTML) => `<li class="modal-desktop-tags contrast">${innerHTML}</li>`)
+     .join('');
+ const languageLiElements = generalLiElements(currentProject.items);
+ popUpItems.innerHTML = languageLiElements;
+ popBtnTop.href = currentProject.liveDemo;
+ popbtnTop.href = currentProject.github;
+ popBtnBtm.href = currentProject.liveDemo;
+ popbtnBtm.href = currentProject.github;
 }
 
-const recentWorkCardsIndex = 0;
-const nextProject = document.querySelector('.modal-content-next-button');
-const previousProject = document.querySelector('.modal-content-previous-button');
 nextProject.addEventListener('click', () => {
-  recentWorkCardsIndex++; 
+  recentWorkCardsIndex++;
+  if(recentWorkCardsIndex >= recentWorkCards.length){
+    recentWorkCardsIndex = 0;
+  }
   showProject;
 });
 
 previousProject.addEventListener('click', () => {
   recentWorkCardsIndex--; 
+  if(recentWorkCardsIndex < 0){
+    recentWorkCardsIndex = recentWorkCards.length - 1;
+  }
   showProject;
 });
 
-
+showProject();
 const cancelBtn = document.querySelector('.modal-cancel-container');
 const modalCancel = () => {
   const modalContainer = document.querySelector('.modal-container');
@@ -217,5 +243,3 @@ const navbarContainer = () => {
 };
 menu.addEventListener('click', navbarContainer);
 menuLinks.addEventListener('click', navbarContainer);
-
-showProject();
