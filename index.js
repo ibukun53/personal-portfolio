@@ -27,7 +27,7 @@ function createAboutMecardElements(data) {
         .join('');
     const languageLiElements = generalLiElements(this.items);
     const liElements = document.createElement('li');
-    liElements.classList.add('flex-box');
+    liElements.classList.add('about-box');
     liElements.innerHTML = `<article><p class="attribute-ellip">
       <img class="attribute-img" src="${this.image}" alt="skill" /> 
     </p>
@@ -37,7 +37,7 @@ function createAboutMecardElements(data) {
   };
 }
 
-const aboutMecardWrapperElement = document.querySelector('.flex-container');
+const aboutMecardWrapperElement = document.querySelector('.about-container');
 function attachAboutMeDom(detail) {
   const portfolioCard = new createAboutMecardElements(detail);
   const portfolio = portfolioCard.createElement();
@@ -235,7 +235,7 @@ cancelBtn.addEventListener('click', modalCancel);
 
 //navbar
 const menu = document.querySelector('.navbar-container');
-const menuLinks = document.querySelector('.nav-menu');
+const menuLinks = document.querySelector('.nav-link');
 // Display mobile menu
 const navbarContainer = () => {
   menu.classList.toggle('is-active');
