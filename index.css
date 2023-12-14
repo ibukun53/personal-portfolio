@@ -475,7 +475,7 @@ ul {
 .attri-content {
   padding: 0;
   margin: 40px;
-  width: 70%;
+  width: 90%;
   list-style-type: none;
 }
 
@@ -879,7 +879,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 25px 25px;
+    margin: 55px 20px 25px;
   }
 
   .content-tags {
