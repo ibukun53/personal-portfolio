@@ -168,12 +168,12 @@ const previousProject = document.querySelector('.modal-content-previous-button')
 btns.forEach((btn) => {
   btn.addEventListener('click', function (event) {
     console.log(event.target.id);
-   const obj= (card) => {
+    const obj = (card) => {
       return card.id === event.target.id;
-    }
+    };
     const currentWork = recentWorkCards.find(obj);
     popUpDescription.textContent = currentWork.description;
-     popUpTitle.textContent = currentWork.title;
+    popUpTitle.textContent = currentWork.title;
     popUpImage.src = currentWork.image;
     const generalLiElements = (innerHTMLs) =>
       innerHTMLs
@@ -196,30 +196,30 @@ const showProject = () => {
   const currentProject = recentWorkCards[recentWorkCardsIndex];
   popUpDescription.textContent = currentProject.description;
   popUpTitle.textContent = currentProject.title;
- popUpImage.src = currentProject.image;
- const generalLiElements = (innerHTMLs) =>
-   innerHTMLs
-     .map((innerHTML) => `<li class="modal-desktop-tags contrast">${innerHTML}</li>`)
-     .join('');
- const languageLiElements = generalLiElements(currentProject.items);
- popUpItems.innerHTML = languageLiElements;
- popBtnTop.href = currentProject.liveDemo;
- popbtnTop.href = currentProject.github;
- popBtnBtm.href = currentProject.liveDemo;
- popbtnBtm.href = currentProject.github;
-}
+  popUpImage.src = currentProject.image;
+  const generalLiElements = (innerHTMLs) =>
+    innerHTMLs
+      .map((innerHTML) => `<li class="modal-desktop-tags contrast">${innerHTML}</li>`)
+      .join('');
+  const languageLiElements = generalLiElements(currentProject.items);
+  popUpItems.innerHTML = languageLiElements;
+  popBtnTop.href = currentProject.liveDemo;
+  popbtnTop.href = currentProject.github;
+  popBtnBtm.href = currentProject.liveDemo;
+  popbtnBtm.href = currentProject.github;
+};
 
 nextProject.addEventListener('click', () => {
   recentWorkCardsIndex++;
-  if(recentWorkCardsIndex >= recentWorkCards.length){
+  if (recentWorkCardsIndex >= recentWorkCards.length) {
     recentWorkCardsIndex = 0;
   }
   showProject;
 });
 
 previousProject.addEventListener('click', () => {
-  recentWorkCardsIndex--; 
-  if(recentWorkCardsIndex < 0){
+  recentWorkCardsIndex--;
+  if (recentWorkCardsIndex < 0) {
     recentWorkCardsIndex = recentWorkCards.length - 1;
   }
   showProject;

@@ -1,0 +1,274 @@
+.navbar-container {
+    display: block;
+}
+
+.nav-menu-wrapper {
+    display: none;
+    position: fixed;
+}
+
+.nav-menu {
+    display: block;
+    position: absolute;
+}
+
+.menu-toggle .bar {
+    cursor: pointer;
+    display: block;
+}
+
+.nav-links {
+    display: table;
+}
+
+#mobile-menu {
+    position: absolute;
+}
+
+.navbar-container.is-active {
+    position: fixed;
+}
+
+.navbar-container.is-active .nav-menu-wrapper {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+.socials-lists-item {
+    display: flex;
+}
+
+.works-header {
+    position: static;
+}
+
+.works {
+    display: flex;
+}
+
+.grid-item {
+    display: inline-block;
+}
+
+.card-img {
+    display: block;
+}
+
+.card-header {
+    display: block;
+}
+
+.card-content {
+    display: flex;
+}
+
+.seeprojects {
+    display: block;
+}
+
+.about-text {
+    position: static;
+}
+
+.about-btn {
+    display: block;
+}
+
+.about-container  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.attribute-ellip {
+    position: static;
+}
+
+.attribute-tags {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.socials-lists-item-after {
+    display: flex;
+}
+
+.modal-container {
+    position: fixed;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content-btn {
+    display: none;
+}
+
+.modal-cancel-icon {
+    display: none;
+}
+
+.modal-cancel-container.hidden {
+    display: none;
+}
+
+.modal-cancel-mobile-icon {
+    display: block;
+    position: absolute;
+}
+
+.modal-content-btn-btm {
+    display: block;
+}
+
+.modal-content-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-attri-desktop-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal-mobile-content {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 1100px) {
+.navbar.container {
+      position: fixed;
+}
+
+.mobile-menu-bar {
+     display: none;
+}
+
+#welcome {
+    display: none;
+}
+
+.works {
+    display: grid;
+}
+
+.nav-menu {
+    display: inline-flex;
+    position: absolute;
+}
+
+.nav-menu.active {
+    position: absolute;
+    display: inline-flex;
+}
+
+.menu-toggle .bar {
+    display: none;
+}
+
+.grid-item {
+    display: inline-block;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seeprojects {
+    display: block;
+    position: relative;
+}
+
+.desktop-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desktop1 {
+    position: relative;
+}
+
+.line {
+    display: none;
+}
+
+.text {
+    display: none;
+}
+
+.line2 {
+    display: none;
+}
+
+.modal-container {
+    position: fixed;
+}
+
+.modal-cancel-mobile-icon {
+    display: none;
+}
+
+.modal-cancel-icon {
+    display: block;
+}
+
+.modal-mobile-image {
+    display: none;
+}
+
+.modal-desktop-image {
+    display: block;
+}
+
+.modal-heading {
+    display: flex;
+}
+
+.modal-content-btn {
+    display: block;
+}
+
+.modal-content-btn-btm {
+    display: none;
+}
+
+.modal-See-Live-Top {
+    display: inline-block;
+}
+
+.modal-See-Source-Top {
+    display: inline-block;
+}
+
+.modal-attri-desktop-content {
+    display: flex;
+}
+
+.modal-desktop-tags {
+    display: block;
+}
+
+.modal-mobile-tags {
+    display: none;
+  }
+
+  .modal-mobile-content {
+    display: none;
+  }
+}
