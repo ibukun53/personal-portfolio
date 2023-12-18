@@ -126,6 +126,7 @@ function createRecentWorkElements(data) {
   this.items = data.items;
   this.id = data.id;
   this.createElement = function createElement() {
+
     const generalLiElements = (textContents) =>
       textContents
         .map((textContent) => `<li class="content-tags contrast">${textContent}</li>`)
@@ -171,6 +172,7 @@ btns.forEach((btn) => {
     const obj = (card) => {
       return card.id === event.target.id;
     };
+
     const currentWork = recentWorkCards.find(obj);
     popUpDescription.textContent = currentWork.description;
     popUpTitle.textContent = currentWork.title;
@@ -189,6 +191,7 @@ btns.forEach((btn) => {
   });
 });
 //*
+
 
 let recentWorkCardsIndex = 0;
 const showProject = () => {
