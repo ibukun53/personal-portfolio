@@ -126,7 +126,6 @@ function createRecentWorkElements(data) {
   this.items = data.items;
   this.id = data.id;
   this.createElement = function createElement() {
-
     const generalLiElements = (textContents) =>
       textContents
         .map((textContent) => `<li class="content-tags contrast">${textContent}</li>`)
@@ -192,7 +191,6 @@ btns.forEach((btn) => {
 });
 //*
 
-
 let recentWorkCardsIndex = 0;
 const showProject = () => {
   const popupContent = document.querySelector('#modal-container');
@@ -229,7 +227,7 @@ previousProject.addEventListener('click', () => {
 });
 
 showProject();
-const cancelBtn = document.querySelector('.modal-cancel-container');
+const cancelBtn = document.querySelector('.modal-cancel');
 const modalCancel = () => {
   const modalContainer = document.querySelector('.modal-container');
   modalContainer.classList.add('hidden');

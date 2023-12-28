@@ -646,14 +646,15 @@ a:hover {
 }
 
 .modal-container {
-  width: 100%;
-  opacity:0.9;
-  background-color: var(--modal-bg-color);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-  transition: all 0.1s ease;
+    width: 97%;
+    opacity: 0.9;
+    background-color: var(--modal-bg-color);
+    top: 0;
+    border: #e5e5e5 solid 15px;
+    left: 0;
+    z-index: 99;
+    transition: all 0.1s ease;
+    height: 96%;
 }
 
 .box-container {
@@ -1035,9 +1036,6 @@ a:hover {
   }
 
   .modal-container {
-    z-index: 99;
-    width: 100%;
-    opacity:0.9;
     background-color: var(--modal-bg-color);
   }
  
